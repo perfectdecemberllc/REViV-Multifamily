@@ -13,19 +13,29 @@ class cardCarousel extends HTMLElement {
           display: block;
           position: relative;
           width: 100%;
-        }
-
-        .carousel-container {
           overflow: hidden;
         }
 
+        .carousel-container {
+          padding-left: var(--padding-horz);
+          position: relative;
+        }
+
+        .carousel-container:hover .arrows-container {
+          opacity: 1;
+        }
+
         .slides {
-          display: flex;
+          display: grid;
+          grid-auto-flow: column;
+          grid-auto-columns: auto;
           gap: 2rem;
           padding-bottom: .5rem;
-          scroll-snap-type: x mandatory;
+          scroll-snap-type: inline mandatory;
           -webkit-overflow-scrolling: touch;
-          overflow-x: scroll;
+          overflow-x: auto;
+          overscroll-behavior-inline: contain;
+          scroll-padding-inline: 2rem;
           scrollbar-width: none; /* For Firefox */
         }
 
@@ -34,29 +44,55 @@ class cardCarousel extends HTMLElement {
         }
 
         ::slotted([slot]) {
-          flex: 0 0 100%;
-          display: flex;
-          justify-content: center;
-          align-items: center;
           scroll-snap-align: start;
         }
 
-        .arrow {
+        .arrows-container {
+          display: flex;
+          gap: 3rem;
           position: absolute;
           top: 50%;
           transform: translateY(-50%);
-          background-color: rgba(0, 0, 0, 0.5);
-          color: #fff;
           padding: 10px;
+          left: 30px;
+          opacity: 0;
+          transition: var(--btn-off);
+        }
+
+        .arrow {
           cursor: pointer;
         }
 
+        .arrow svg path {
+          transition: var(--btn-on);
+        }
+
+        .arrow:hover svg path {
+          fill: var(--clr-primary-500);
+        }
+
         .left-arrow {
-          left: 10px;
+          z-index: 10;
         }
 
         .right-arrow {
-          right: 10px;
+          z-index: 10;
+        }
+
+        @media (min-width: 33em) {
+          .slides {
+            grid-auto-columns: max-content;
+          }
+          .carousel-container {
+            padding-left: calc(var(--padding-horz) + 110px + 3rem);
+          }
+        }
+        @media (min-width: 90em) {
+          .carousel-container {
+            margin-left: calc((100% - 104.625rem) / 2);
+          }
+        }
+        
         }
       </style>
     `;
@@ -67,9 +103,20 @@ class cardCarousel extends HTMLElement {
 
       this.shadowRoot.innerHTML = `
         ${styles}
-        <div class="arrow left-arrow" id="left-arrow">&lt;</div>
-        <div class="arrow right-arrow" id="right-arrow">&gt;</div>
+        
         <div class="carousel-container">
+          <div class="arrows-container">
+            <div class="arrow left-arrow" id="left-arrow">
+              <svg width="21" height="44" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M21 0.500001L-9.39761e-07 22.0008L21 43.5L21 33.5394L9.72928 22.0008L21 10.4606L21 0.500001Z" fill="var(--clr-neutral-300)"/>
+              </svg>
+            </div>
+            <div class="arrow right-arrow" id="right-arrow">
+              <svg width="21" height="44" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M0 43.5L21 21.9992L1.87959e-06 0.5L1.4442e-06 10.4606L11.2707 21.9992L4.35391e-07 33.5394L0 43.5Z" fill="var(--clr-neutral-300)"/>
+              </svg>
+            </div>
+          </div>
           <div class="slides">
             ${slotsHtml}
           </div>

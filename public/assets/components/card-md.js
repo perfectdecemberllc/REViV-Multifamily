@@ -51,8 +51,13 @@ class cardMd extends HTMLElement {
                     color: var(--clr-neutral-500);
                 }
                 .content-container a {
-                    color: #216AA2;
+                    color: var(--clr-primary-500);
                     text-decoration: none;
+                    transition: var(--btn-off);
+                }
+                .content-container a:hover {
+                    color: var(--clr-primary-800);
+                    transition: var(--btn-on);
                 }
                 slot[name="image"]::slotted(img) {
                     width: 100%;
@@ -60,7 +65,12 @@ class cardMd extends HTMLElement {
                     object-fit: cover;
                     display: block;
                 }
-
+                .text-button {
+                    font-family: var(--ff-primary);
+                    font-weight: var(--fw-semi-bold);
+                    line-height: var(--lh-100);
+                    font-size: var(--fs-button);
+                }
                 .triangle {
                     transform: translateX(-100%);
                     transition: transform 0.3s;
@@ -87,7 +97,7 @@ class cardMd extends HTMLElement {
                             <slot name="title"></slot>
                         </div>
                     </div>
-                    <a href="${this.getAttribute('link')}" target="_blank">Read More</a>
+                    <a class="text-button" href="${this.getAttribute('link')}" target="_blank">Read More</a>
                 </div>
             </div>
         `;
