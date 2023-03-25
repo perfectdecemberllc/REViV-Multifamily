@@ -1,5 +1,5 @@
 
-class ColorCarousel extends HTMLElement {
+class cardCarousel extends HTMLElement {
   constructor() {
     super();
     this.attachShadow({ mode: 'open' });
@@ -22,6 +22,7 @@ class ColorCarousel extends HTMLElement {
         .slides {
           display: flex;
           gap: 2rem;
+          padding-bottom: .5rem;
           scroll-snap-type: x mandatory;
           -webkit-overflow-scrolling: touch;
           overflow-x: scroll;
@@ -106,4 +107,4 @@ class ColorCarousel extends HTMLElement {
   }
 }
 
-customElements.define('color-carousel', ColorCarousel);
+customElements.define('card-carousel', cardCarousel);
