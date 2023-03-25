@@ -30,6 +30,7 @@ class cardMd extends HTMLElement {
                 }
                 .details {
                     display: flex;
+                    gap: .125rem;
                     flex-direction: column;
                 }
                 .details .address {
@@ -46,7 +47,7 @@ class cardMd extends HTMLElement {
                 }
                 .details slot[name="title"] {
                     font-family: var(--ff-label);
-                    font-weight: var(--fw-semi-bold);
+                    font-weight: var(--fw-regular);
                     font-size: var(--fs-label-lg);
                     color: var(--clr-neutral-500);
                 }
