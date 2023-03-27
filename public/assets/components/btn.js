@@ -17,12 +17,15 @@ class ButtonComponent extends HTMLElement {
                 line-height: var(--lh-100);
                 font-size: var(--fs-button);
             }
+
+            .filled, .stroked {
+                border-radius: var(--br-sm);
+                transition: var(--btn-off);
+            }
     
             .filled {
-                border-radius: var(--br-sm);
                 background-color: var(--clr-primary-500);
                 color: var(--clr-neutral-100);
-                transition: var(--btn-off);
             }
     
             .filled:hover {
@@ -32,13 +35,12 @@ class ButtonComponent extends HTMLElement {
     
             .stroked {
                 background-color: transparent;
-                color: #007bff;
-                border: 2px solid #007bff;
+                color: var(--clr-primary-500);
+                border: 2px solid var(--clr-primary-500);
             }
     
             .stroked:hover {
-                background-color: #007bff;
-                color: #ffffff;
+                background-color: var(--clr-primary-100);
             }
 
             @media (min-width: 51em) {

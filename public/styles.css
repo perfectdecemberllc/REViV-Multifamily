@@ -804,6 +804,15 @@ margin-left: 1.5rem;
     display: grid;
     align-content: space-between;
 }
+.flex {
+    display: flex;
+}
+.justify-between {
+    justify-content: space-between;
+}
+.align-bottom {
+    align-items: flex-end;
+}
 .opacity-20 {
     opacity: 0.2;
 }
