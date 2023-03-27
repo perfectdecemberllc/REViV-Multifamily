@@ -79,7 +79,7 @@ class cardCarousel extends HTMLElement {
           z-index: 10;
         }
 
-        @media (min-width: 33em) {
+        @media (min-width: 51em) {
           .slides {
             grid-auto-columns: max-content;
           }

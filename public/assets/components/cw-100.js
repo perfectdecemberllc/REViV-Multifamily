@@ -6,13 +6,13 @@ contentWrapper100.innerHTML = `
             flex-direction: column;
             gap: .25rem;
             max-width: 10.625rem;
-            flex: 0 0 10.625rem;
+            flex: 1 1 6.625rem;
         }
 
         slot[name="heading"] {
             font-family: var(--ff-heading);
             font-weight: var(--fw-bold);
-            font-size: var(--fs-700);
+            font-size: var(--fs-550);
             line-height: var(--lh-100);
             color: var(--clr-neutral-100);
         }
@@ -23,6 +23,12 @@ contentWrapper100.innerHTML = `
             font-size: var(--fs-50);
             line-height: var(--lh-600);
             color: var(--clr-neutral-100);
+        }
+
+        @media (min-width: 51em) {
+            slot[name="heading"] {
+                font-size: var(--fs-700);
+            }
         }
 
     </style>

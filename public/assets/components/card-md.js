@@ -7,7 +7,7 @@ class cardMd extends HTMLElement {
             <style>
                 :host {
                     display: block;
-                    max-width: 28.3125rem;
+                    max-width: 30.3125rem;
                     min-width: 18rem;
                     border-radius: var(--br-700);
                     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
@@ -18,14 +18,15 @@ class cardMd extends HTMLElement {
                     flex-wrap: wrap;
                     justify-content: space-between;
                     align-items: center;
+                    gap: 1rem;
                     padding-top: 2rem;
                     padding-right: 1.5rem;
                     padding-bottom: 2.5rem;
-                    padding-left: 0;
+                    padding-left: 1.25rem;
                 }
                 .content {
                     display: flex;
-                    gap: 1rem;
+                    gap: 1.25rem;
                     align-items: center;
                 }
                 .details {
@@ -35,7 +36,7 @@ class cardMd extends HTMLElement {
                 }
                 .details .address {
                     display: flex;
-                    align-items: center;
+                    align-items: baseline;
                     padding-top: 3px;
                     gap: .25rem;
                 }
@@ -43,6 +44,7 @@ class cardMd extends HTMLElement {
                     font-family: var(--ff-label);
                     font-weight: var(--fw-regular);
                     font-size: var(--fs-label-sm);
+                    line-height: var(--lh-200);
                     color: var(--clr-primary-500);
                 }
                 .details slot[name="title"] {
@@ -73,11 +75,24 @@ class cardMd extends HTMLElement {
                     font-size: var(--fs-button);
                 }
                 .triangle {
+                    display: none;
                     transform: translateX(-100%);
                     transition: transform 0.3s;
                 }
                 .content-container:hover .triangle {
                     transform: translateX(0%);
+                }
+                @media (min-width: 51em) {
+                    .content-container {
+                        padding-left: 0;
+                        gap: 0;
+                    }
+                    .details .address {
+                        align-items: center;
+                    }
+                    .triangle {
+                        display: block;
+                    }
                 }
             </style>
             <div>
