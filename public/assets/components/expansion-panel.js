@@ -10,6 +10,11 @@ class expansionPanel extends HTMLElement {
             width: 100%;
             cursor: pointer;
             padding-bottom: 1.5rem;
+            transition: var(--btn-off);
+          }
+          :host(:hover) {
+            background-color: #f7fafc;
+            transition: var(--btn-on);
           }
           button {
             background: transparent;
@@ -31,10 +36,6 @@ class expansionPanel extends HTMLElement {
             line-height: var(--lh-100);
             padding: 1.5rem 0 0;
             text-align: left;
-            transition: background-color 0.2s ease;
-          }
-          button:hover {
-            background-color: #f7fafc;
           }
           .content {
             transition: max-height 0.3s ease;
