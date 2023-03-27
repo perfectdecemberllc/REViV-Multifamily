@@ -3,50 +3,50 @@ hero.innerHTML = `
     <style>
         :host {
             display: grid;
-            grid-template-areas: "hero";
+            grid-template-areas: 
+                "nav"
+                "content"
+            ;
+            grid-template-rows: auto 1fr;
+            grid-template-columns: 1fr;
             height: 100vh;
             height: 100svh;
             overflow: hidden;
         }
 
-        :host > * {
-            grid-area: hero;
-        }
-
         slot[name="nav"] {
             position: relative;
             display: block;
-            z-index: 5;
+            z-index: 10;
+            grid-area: nav;
         }
 
         slot[name="content"] {
             position: relative;
             display: block;
             z-index: 5;
+            grid-area: content;
             margin-inline: auto;
-            padding: 0 1rem;
+            padding-inline: var(--padding-horz);
             align-self: center;
             width: -webkit-fill-available;
             width: -moz-available;
             max-width: var(--max-width);
         }
 
-        slot[name="image"] {
+        slot[name="hero-image"] {
             display: block;
             overflow: hidden;
-        }
-
-        @media (min-width: 375px) {
-            slot[name="content"] {
-                padding: 0 1.25rem;
-            }
+            grid-column-start: 1;
+            grid-row-start: 1;
+            grid-row-end: 3;
         }
 
     </style>
     
     <slot name="nav"></slot>
     <slot name="content"></slot>
-    <slot name="image"></slot>
+    <slot name="hero-image"></slot>
         
     
 `;

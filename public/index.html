@@ -43,20 +43,20 @@
         <!--HERO SECTION-->
         <hero-section>
             <!--HERO CONTENT-->
-            <responsive-navbar slot="nav"></responsive-navbar>
+            <nav-mobile slot="nav"></nav-mobile>
             <cw-900 slot="content">
                 <label slot="label-text" for="hero">ReViv Your Approach</label>
                 <h1 slot="heading-text">Redefine Your Value Add</h1>
                 <btn-component slot="button" href="#" data-variation="filled">Discover More</btn-component>
             </cw-900>
             <!--HERO IMAGE-->
-            <picture slot="image">
+            <picture slot="hero-image">
                 <source media="(min-width: 300px)" srcset="
                             assets/images/reviv_home_hero_1x.webp 1x,
                             assets/images/reviv_home_hero_2x.webp 2x,
                             assets/images/reviv_home_hero_3x.webp 3x">
 
-                <img class="h-full w-full max-w-none" src="assets/images/reviv_home_hero_1x.jpg" alt="">
+                <img src="assets/images/reviv_home_hero_1x.jpg" alt="">
             </picture>
         </hero-section>
         <main>
@@ -368,6 +368,7 @@
         </main>
     </body>
     <script src="assets/components/responsive-nav.js"></script>
+    <script src="assets/components/nav-mobile.js"></script>
     <script src="assets/components/card-carousel.js"></script>
     <script src="assets/components/expansion-panel.js"></script>
     <script src="assets/components/testimonials.js"></script>
