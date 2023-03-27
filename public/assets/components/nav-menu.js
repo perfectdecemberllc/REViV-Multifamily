@@ -219,6 +219,6 @@ class NavMenu extends HTMLElement {
   }
 }
 
-window.customElements.define('nav-mobile', NavMenu);
+window.customElements.define('nav-menu', NavMenu);
 
   
