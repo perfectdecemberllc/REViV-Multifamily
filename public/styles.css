@@ -306,40 +306,40 @@ video {
 }
 @font-face {
     font-family: 'Aktiv Grotesk';
-    src: url('../../public/assets/fonts/AktivGrotesk-Medium.woff2') format('woff2'),
-        url('../../public/assets/fonts/AktivGrotesk-Medium.woff') format('woff');
+    src: url('assets/fonts/AktivGrotesk-Medium.woff2') format('woff2'),
+        url('assets/fonts/AktivGrotesk-Medium.woff') format('woff');
     font-weight: 600;
     font-style: normal;
     font-display: swap;
 }
 @font-face {
     font-family: 'Aktiv Grotesk';
-    src: url('../../public/assets/fonts/AktivGrotesk-Light.woff2') format('woff2'),
-        url('../../public/assets/fonts/AktivGrotesk-Light.woff') format('woff');
+    src: url('assets/fonts/AktivGrotesk-Light.woff2') format('woff2'),
+        url('assets/fonts/AktivGrotesk-Light.woff') format('woff');
     font-weight: 300;
     font-style: normal;
     font-display: swap;
 }
 @font-face {
     font-family: 'Aktiv Grotesk';
-    src: url('../../public/assets/fonts/AktivGrotesk-Black.woff2') format('woff2'),
-        url('../../public/assets/fonts/AktivGrotesk-Black.woff') format('woff');
+    src: url('assets/fonts/AktivGrotesk-Black.woff2') format('woff2'),
+        url('assets/fonts/AktivGrotesk-Black.woff') format('woff');
     font-weight: 900;
     font-style: normal;
     font-display: swap;
 }
 @font-face {
     font-family: 'Aktiv Grotesk';
-    src: url('../../public/assets/fonts/AktivGrotesk-Bold.woff2') format('woff2'),
-        url('../../public/assets/fonts/AktivGrotesk-Bold.woff') format('woff');
+    src: url('assets/fonts/AktivGrotesk-Bold.woff2') format('woff2'),
+        url('assets/fonts/AktivGrotesk-Bold.woff') format('woff');
     font-weight: 700;
     font-style: normal;
     font-display: swap;
 }
 @font-face {
     font-family: 'Aktiv Grotesk';
-    src: url('../../public/assets/fonts/AktivGrotesk-Regular.woff2') format('woff2'),
-        url('../../public/assets/fonts/AktivGrotesk-Regular.woff') format('woff');
+    src: url('assets/fonts/AktivGrotesk-Regular.woff2') format('woff2'),
+        url('assets/fonts/AktivGrotesk-Regular.woff') format('woff');
     font-weight: 500;
     font-style: normal;
     font-display: swap;
