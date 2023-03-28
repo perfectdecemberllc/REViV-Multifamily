@@ -41,20 +41,20 @@ class CustomerTestimonials extends HTMLElement {
               color: var(--clr-primary-500);
             }
             [slot^="name-"][aria-selected="false"] {
-              transition: all 0.5s ease;
+              transition: var(--btn-off);
               background-color: rgba(250, 250, 250, .3);
             }
             [slot^="name-"][aria-selected="false"] img {
               filter: grayscale(100%);
               opacity: 0.65;
+              transition: var(--btn-off);
             }
             [slot^="name-"][aria-selected="false"]:hover {
               background-color: rgba(250, 250, 250, .8);
-              transition: all 0.25s ease;
               filter: grayscale(0%);
             }
             [slot^="name-"][aria-selected="false"]:hover img {
-              transition: all 0.5s ease;
+              transition: var(--btn-on);
               filter: grayscale(0%);
               opacity: 1;
             }

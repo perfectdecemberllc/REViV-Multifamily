@@ -27,9 +27,10 @@ cardxs.innerHTML = `
             font-weight: var(--fw-semi-bold);
             font-size: var(--fs-label-md);
         }
-        
-        slot[name="realtorAvatar"]::slotted(img) {
-            transition: all 0.5s ease;
+        .avatar-container {
+            max-width: 4.6875rem;
+            border-radius: var(--br-md);
+            overflow: hidden;
         }
 
         @media (min-width: 53em) {
@@ -40,7 +41,7 @@ cardxs.innerHTML = `
     </style>
 
     
-        <div>
+        <div class="avatar-container">
             <slot name="realtorAvatar"></slot>
         </div>
         <div>

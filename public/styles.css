@@ -590,10 +590,30 @@ picture[slot="hero-image"] img {
     height: 100%;
     position: relative;
     isolation: isolate;
-    --arch-img: url(assets/images/blueprint-bg.png);
-    --building-img: url(assets/images/building-bg_1x.webp);
-    --img-opacity: .1;
+    --blueprint-img: url(assets/images/blueprint/blueprint_1x.png);
+    --illustration-img: url(assets/images/illustration/illustration_1x.webp);
+    --blueprint-img-opacity: .1;
+    --illustration-img-opacity: .6;
+
+    /* @2x Images (Pixel Ratio of 1.25+) */
 }
+@media only screen and (-webkit-min-device-pixel-ratio: 1.25),
+       only screen and (min-device-pixel-ratio: 1.25),
+       only screen and (min-resolution: 1.25dppx) {
+.transparent-img {
+        --blueprint-img: url(assets/images/blueprint/blueprint_2x.png);
+        --illustration-img: url(assets/images/illustration/illustration_2x.webp);
+}
+    }
+/* @3x Images (Pixel Ratio of 2.25+) */
+@media only screen and (-webkit-min-device-pixel-ratio: 2.25),
+       only screen and (min-device-pixel-ratio: 2.25),
+       only screen and (min-resolution: 2.25dppx) {
+.transparent-img {
+        --blueprint-img: url(assets/images/blueprint/blueprint_3x.png);
+        --illustration-img: url(assets/images/illustration/illustration_3x.webp);
+}
+    }
 .transparent-img::after {
     content: "";
     position: absolute;
@@ -602,30 +622,16 @@ picture[slot="hero-image"] img {
     right: 0;
     bottom: 0;
     left: 0;
-    background-image: var(--arch-img);
-    opacity: var(--img-opacity);
     background-size: cover;
     background-position: center;
 }
-.transparent-img-building {
-    height: 100%;
-    position: relative;
-    isolation: isolate;
-    --building-img: url(assets/images/building-bg_1x.webp);
-    --img-opacity: .6;
+.transparent-img[data-variation="blueprint"]::after {
+    background-image: var(--blueprint-img);
+    opacity: var(--blueprint-img-opacity);
 }
-.transparent-img-building::after {
-    content: "";
-    position: absolute;
-    z-index: -1;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    background-image: var(--building-img);
-    opacity: var(--img-opacity);
-    background-size: cover;
-    background-position: center;
+.transparent-img[data-variation="illustration"]::after {
+    background-image: var(--illustration-img);
+    opacity: var(--illustration-img-opacity);
     background-color: #FAF8F6;
 }
 .primary-navigation[data-visible] {
