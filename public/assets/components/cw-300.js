@@ -7,12 +7,13 @@ contentWrapper300.innerHTML = `
             max-width: 65ch;
         }
 
-        :host([role="list-item"]) {
-            max-width: 29.375rem;
+        :host([data-variation="icons"]) slot[name="large-icon"] {
+            display: none;
         }
 
-        slot[name="large-icon"] {
-            display: none;
+        :host([data-variation="numbers"]) slot[name="large-icon"] {
+            display: block;
+            flex: 1 1;
         }
 
         .heading-container {
@@ -20,6 +21,10 @@ contentWrapper300.innerHTML = `
             gap: .5rem;
             align-items: center;
             margin-bottom: .5rem;
+        }
+
+        :host([data-variation="numbers"]) .heading-container {
+            flex: 1 1;
         }
 
         slot[name="heading"] {
@@ -38,13 +43,18 @@ contentWrapper300.innerHTML = `
             color: var(--clr-neutral-500);
         }
 
-        @media (min-width: 1024px) {
-            slot[name="large-icon"] {
+        @media (min-width: 33em) {
+            :host([data-variation="icons"]) slot[name="large-icon"] {
                 display: block;
             }
 
-            slot[name="small-icon"] {
+            :host([data-variation="icons"]) slot[name="small-icon"] {
                 display: none;
+            }
+        }
+        @media (min-width: 51em) {
+            :host([role="list-item"]) {
+                max-width: 29.375rem;
             }
         }
 
