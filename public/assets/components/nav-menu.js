@@ -206,7 +206,7 @@ class NavMenu extends HTMLElement {
         </button>
         <div class="nav-links-container">
           <ul class="nav-links">
-            <li><a href="#">Home</a></li>
+            <li><a href="index.html">Home</a></li>
             <li><a href="#">Services</a></li>
             <li><a href="#">Process</a></li>
             <li><a href="#">Projects</a></li>
