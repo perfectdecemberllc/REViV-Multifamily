@@ -634,10 +634,6 @@ picture[slot="hero-image"] img {
     opacity: var(--illustration-img-opacity);
     background-color: #FAF8F6;
 }
-.primary-navigation[data-visible] {
-    display: block;
-    position: fixed;
-}
 /* PADDING */
 .p-0 {
     padding: 0;
