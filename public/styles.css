@@ -793,6 +793,26 @@ margin-left: 1.5rem;
     grid-gap: 1rem;
     gap: 1rem;
 }
+.gap-5 {
+    display: grid;
+    grid-gap: 1.25rem;
+    gap: 1.25rem;
+}
+.gap-6 {
+    display: grid;
+    grid-gap: 1.5rem;
+    gap: 1.5rem;
+}
+.gap-7 {
+    display: grid;
+    grid-gap: 1.75rem;
+    gap: 1.75rem;
+}
+.gap-8 {
+    display: grid;
+    grid-gap: 2rem;
+    gap: 2rem;
+}
 .gap-xxs {
     display: grid;
     grid-gap: 1.25rem;

@@ -1,4 +1,3 @@
-// team-card.js
 class TeamCard extends HTMLElement {
     constructor() {
       super();
@@ -8,9 +7,11 @@ class TeamCard extends HTMLElement {
       const wrapper = document.createElement('div');
       wrapper.setAttribute('class', 'card');
   
+      this.picture = document.createElement('picture');
       this.img = document.createElement('img');
       this.img.setAttribute('class', 'card-image');
-      wrapper.appendChild(this.img);
+      this.picture.appendChild(this.img);
+      wrapper.appendChild(this.picture);
   
       const infoContainer = document.createElement('div');
       infoContainer.setAttribute('class', 'info-container');
@@ -27,13 +28,11 @@ class TeamCard extends HTMLElement {
       style.textContent = `
         .card {
           width: 270px;
-          display: inline-block;
-          margin-right: 10px;
           opacity: 0;
           transform: translateY(50px);
           transition: opacity 0.5s, transform 0.5s;
           background-color: var(--clr-neutral-100);
-          box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+          box-shadow: var(--ds-primary);
           border-radius: var(--br-md);
           overflow: hidden;
         }
@@ -47,6 +46,7 @@ class TeamCard extends HTMLElement {
         }
         .info-container h4 {
           margin: 0;
+          font-family: var(--ff-primary);
           font-size: var(--fs-50);
           font-weight: var(--fw-regular);
           color: var(--clr-primary-500);
@@ -54,8 +54,9 @@ class TeamCard extends HTMLElement {
         }
         .info-container p {
           margin: 0;
+          font-family: var(--ff-primary);
           font-size: var(--fs-300);
-          font-weight: var(--fw-semi-bold);
+          font-weight: var(--fw-regular;
           color: var(--clr-neutral-900);
         }
       `;
@@ -64,11 +65,21 @@ class TeamCard extends HTMLElement {
     }
   
     connectedCallback() {
-        this.img.src = this.getAttribute('image-src');
         this.jobTitle.textContent = this.getAttribute('title');
         this.memberName.textContent = this.getAttribute('name');
         this.initObserver();
-      }
+    
+        // Assuming srcset attribute is passed like: image-srcset="img-1x.jpg 1x, img-2x.jpg 2x, img-3x.jpg 3x"
+        const srcset = this.getAttribute('image-srcset');
+        if (srcset) {
+          this.img.setAttribute('srcset', srcset);
+        }
+    
+        const src = this.getAttribute('image-src');
+        if (src) {
+          this.img.setAttribute('src', src);
+        }
+    }
   
     initObserver() {
       const options = {
