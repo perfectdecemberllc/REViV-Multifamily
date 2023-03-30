@@ -15,6 +15,7 @@
         <script src="assets/components/cw-400.js"></script>
         <script src="assets/components/cw-900.js"></script>
         <script src="assets/components/card-xs.js"></script>
+        <script src="assets/components/card-sm.js"></script>
         <script src="assets/components/logo-list.js"></script>
     </head>
     <body>
@@ -126,8 +127,8 @@
                 <div class="container grid" type="value-add">
                     <!--HEADING CONTENT-->
                     <cw-400>
-                        <h5 slot="label">What Is</h5>
-                        <h2 slot="heading">Defining "Value Add"</h2>
+                        <h5 slot="label">Defining</h5>
+                        <h2 slot="heading">"Value Add"</h2>
                         <p slot="description">For Multi-family owners seeking the best return on their investment, we deliver a higher ROI with faster, turnkey renovations, completed with unquestionable workmanship, insight, and integrity.</p>
                     </cw-400>
                     <!--VALUE ADD LIST-->
@@ -139,11 +140,10 @@
                                 assets/images/define-value/concept-1_1x.webp 1x,
                                 assets/images/define-value/concept-1_2x.webp 2x,
                                 assets/images/define-value/concept-1_3x.webp 3x">
-    
                                 <img class="w-full" src="assets/images/define-value/concept-1_1x.jpg" alt="">
                             </picture>
-                            <h2 slot="heading">Concept 1</h2>
-                            <p slot="description">ROI-Focused insights & market knowledge: Our unique backgrounds in construction and property valuation offer your team value-add expertise that will impact your ROI.</p>
+                            <h2 slot="heading">ROI-Focused Insights & Market Knowledge</h2>
+                            <p slot="description">Our unique backgrounds in construction and property valuation offer your team value-add expertise that will impact your ROI.</p>
                         </cw-200>
                         <!--CONCEPT 2-->
                         <cw-200>
@@ -155,8 +155,8 @@
     
                                 <img class="w-full" src="assets/images/define-value/concept-2_1x.jpg" alt="">
                             </picture>
-                            <h2 slot="heading">Concept 2</h2>
-                            <p slot="description">Turn-key services: Inside and Out - We manage the complete process from concept to completion, including every amenity or detail, for a turn-key result you can trust.</p>
+                            <h2 slot="heading">Turn-key Services</h2>
+                            <p slot="description">Inside and Out - We manage the complete process from concept to completion, including every amenity or detail, for a turn-key result you can trust.</p>
                         </cw-200>
                         <!--CONCEPT 3-->
                         <cw-200>
@@ -168,9 +168,27 @@
     
                                 <img class="w-full" src="assets/images/define-value/concept-3_1x.jpg" alt="">
                             </picture>
-                            <h2 slot="heading">Concept 3</h2>
-                            <p slot="description">Timely Unit Turns: We have an experienced staff that is able to renovate your units with swift skill, avoiding subcontractor delays. </p>
+                            <h2 slot="heading">Timely Unit Turns</h2>
+                            <p slot="description">We have an experienced staff that is able to renovate your units with swift skill, avoiding subcontractor delays. </p>
                         </cw-200>
+                    </ul>
+                </div>
+            </section>
+            <section class="section">
+                <div class="container gap-sm">
+                    <cw-300>
+                        <h3 slot="heading">Our Team</h3>
+                        <p slot="description">Driven by distinctive service and pride in our work, we aim to become the leader in multi-family renovations, elevating the communities we touch and those who call them home.</p>
+                    </cw-300>
+                    <ul>
+                        <card-sm image-src="assets/images/team/team_tommy_1x.webp" title="Realtor" name="John Doe">
+                        </card-sm>
+                        <card-sm image-src="assets/images/team/team_tommy_1x.webp" title="Realtor" name="Jane Smith">
+                        </card-sm>
+                        <card-sm image-src="assets/images/team/team_tommy_1x.webp" title="Office Manager" name="Mary Johnson">
+                        </card-sm>
+                        <card-sm image-src="assets/images/team/team_tommy_1x.webp" title="Marketing Specialist" name="Paul Brown">
+                        </card-sm>
                     </ul>
                 </div>
             </section>
@@ -292,7 +310,6 @@
                 </div>
             </section>
         </main>
-        
     </body>
     <script src="assets/components/nav-menu.js"></script>
     <script src="assets/components/testimonials.js"></script>
