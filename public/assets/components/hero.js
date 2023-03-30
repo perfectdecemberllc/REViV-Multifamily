@@ -14,6 +14,11 @@ hero.innerHTML = `
             overflow: hidden;
         }
 
+        :host([data-variation="height-70"]) {
+            height: 70vh;
+            height: 70svh;
+        }
+
         slot[name="nav"] {
             position: relative;
             display: block;

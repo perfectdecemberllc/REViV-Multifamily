@@ -13,7 +13,6 @@ contentWrapper300.innerHTML = `
 
         :host([data-variation="numbers"]) slot[name="large-icon"] {
             display: block;
-            flex: 1 1;
         }
 
         .heading-container {
