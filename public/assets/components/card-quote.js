@@ -3,7 +3,7 @@ cardQuote.innerHTML = `
     <style>
         :host {
             display: grid;
-            gap: 4rem;
+            gap: 3rem;
             padding: 4rem;
             max-width: 22.9375rem;
             border-radius: var(--br-md);
