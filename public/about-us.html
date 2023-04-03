@@ -16,6 +16,7 @@
         <script src="assets/components/cw-900.js"></script>
         <script src="assets/components/card-xs.js"></script>
         <script src="assets/components/card-sm.js"></script>
+        <script src="assets/components/card-quote.js"></script>
         <script src="assets/components/logo-list.js"></script>
     </head>
     <body>
@@ -52,6 +53,14 @@
                 <div class="grid-even-cols container">
                     <!--LEFT COLUMN-->
                     <div class="content-between scrnSm-gap-sm">
+                        <card-quote>
+                            <p slot="quote">
+                                Nunc hendrerit, justo vel ultricfsfs ieseleifend, ex ex pretium leo acfn ibus nulla eros consectetur eros. Cras vive neque at elit rutrum, id dictum magn hendrerit.  
+                            </p>
+                            <img slot="author-thumbnail" src="assets/images/team/team_tj_2x.webp" alt="">
+                            <h5 slot="author-title">Job Title</h5>
+                            <h4 slot="author-name">TJ Higgins</h4>
+                        </card-quote>
                     </div>
                     <!--RIGHT COLUMN-->
                     <div class="content-between gap-sm">
@@ -301,6 +310,7 @@
                 <!--TESTIMONIALS-->
                 <div class="container">
                     <customer-testimonials>
+                        <!--TESTIMONIAL BUTTONS-->
                         <ul type="testimonials">
                             <!--TESTIMONIAL BUTTON 0-->
                             <card-xs slot="name-0" role="button" tabindex="0" aria-selected="true">
