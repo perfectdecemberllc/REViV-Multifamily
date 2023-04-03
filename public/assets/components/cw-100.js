@@ -25,6 +25,10 @@ contentWrapper100.innerHTML = `
             color: var(--clr-neutral-100);
         }
 
+        :host([data-variation="dark"]) slot[name="heading"],:host([data-variation="dark"]) slot[name="description"] {
+            color: var(--clr-neutral-700);
+        }
+
         @media (min-width: 51em) {
             slot[name="heading"] {
                 font-size: var(--fs-700);

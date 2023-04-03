@@ -11,6 +11,12 @@ pageIntro.innerHTML = `
             text-align: center;
         }
 
+        :host([data-variation="left-aligned"]) {
+            text-align: left;
+            align-items: flex-start;
+            margin: 0;
+        }
+
         slot[name="heading"] {
             font-family: var(--ff-heading);
             font-weight: var(--fw-bold);

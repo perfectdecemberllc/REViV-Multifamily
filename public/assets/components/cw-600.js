@@ -4,12 +4,18 @@ contentWrapper600.innerHTML = `
        :host {
             display: grid;
             gap: 1rem;
+            max-width: 15rem;
        }
+
+       .content-container {
+            display: grid;
+            gap: .5rem;
+        }
 
         slot[name="heading"] {
             font-family: var(--ff-heading);
             font-weight: var(--fw-regular);
-            font-size: var(--fs-heading-sm);
+            font-size: var(--fs-400);
             line-height: var(--lh-100);
             color: var(--clr-accent-700);
         }
