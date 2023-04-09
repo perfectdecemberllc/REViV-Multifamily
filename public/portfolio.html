@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>ReViv</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="styles.css">
+        <script src="assets/components/hero.js"></script>
+        <script src="assets/components/btn.js"></script>
+        <script src="assets/components/page-intro.js"></script>
+        <script src="assets/components/cw-900.js"></script>
+        <script src="assets/components/card-lg.js"></script>
+    </head>
+    <body>
+        <!--HERO SECTION-->
+        <hero-section data-variation="height-70">
+            <!--HERO CONTENT-->
+            <nav-menu slot="nav"></nav-menu>
+            <cw-900 slot="content">
+                <label slot="label-text" for="hero">ReViv Your Approach</label>
+                <h1 slot="heading-text">Redefine Your Value Add</h1>
+                <btn-component slot="button" href="#" data-variation="filled">Discover More</btn-component>
+            </cw-900>
+            <!--HERO IMAGE-->
+            <picture slot="hero-image">
+                <source media="(min-width: 300px)" srcset="
+                    assets/images/hero/hero_about_1x.webp 1x,
+                    assets/images/hero/hero_about_2x.webp 2x,
+                    assets/images/hero/hero_about_3x.webp 3x">
+
+                <img src="assets/images/hero/hero_about_1x.jpg" alt="">
+            </picture>
+        </hero-section>
+        <!--CASE STUDIES-->
+        <section class="section transparent-img" data-variation="blueprint">
+            <div class="container">
+                <ul class="flex wrap gap-5">
+                    <card-lg date="01 Sep-2022" title="Braxton at Brier Creek" link="#">
+                        <div slot="image"></div>
+                    </card-lg>
+                    <card-lg date="01 Sep-2022" title="Braxton at Brier Creek" link="#">
+                        <div slot="image"></div>
+                    </card-lg>
+                    <card-lg date="01 Sep-2022" title="Braxton at Brier Creek" link="#">
+                        <div slot="image"></div>
+                    </card-lg>
+                    <card-lg date="01 Sep-2022" title="Braxton at Brier Creek" link="#">
+                        <div slot="image"></div>
+                    </card-lg>
+                    <card-lg date="01 Sep-2022" title="Braxton at Brier Creek" link="#">
+                        <div slot="image"></div>
+                    </card-lg>
+                </ul>
+            </div>
+        </section>
+
+    </body>
+    <script src="assets/components/nav-menu.js"></script>
+</html>
