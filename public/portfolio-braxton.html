@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Braxton At Brier Creek</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="styles.css">
+        <script src="assets/components/hero.js"></script>
+        <script src="assets/components/btn.js"></script>
+        <script src="assets/components/page-intro.js"></script>
+        <script src="assets/components/cw-900.js"></script>
+        <script src="assets/components/cw400.js"></script>
+        <script src="assets/components/checklist-item.js"></script>
+        <script src="assets/components/cw-description.js"></script>
+        <script src="assets/components/highlights-list.js"></script>
+        <script src="assets/components/img-banner.js"></script>
+        <script src="assets/components/cw-100-list.js"></script>
+        <script src="assets/components/cw-100.js"></script>
+    </head>
+    <body>
+        <!--HERO SECTION-->
+        <hero-section data-variation="height-70">
+            <!--HERO CONTENT-->
+            <nav-menu slot="nav"></nav-menu>
+            <cw-900 slot="content">
+                <label slot="label-text" for="hero">ReViv Your Approach</label>
+                <h1 slot="heading-text">Redefine Your Value Add</h1>
+                <btn-component slot="button" href="#" data-variation="filled">Discover More</btn-component>
+            </cw-900>
+            <!--HERO IMAGE-->
+            <picture slot="hero-image">
+                <source media="(min-width: 300px)" srcset="
+                    assets/images/hero/hero_about_1x.webp 1x,
+                    assets/images/hero/hero_about_2x.webp 2x,
+                    assets/images/hero/hero_about_3x.webp 3x">
+
+                <img src="assets/images/hero/hero_about_1x.jpg" alt="">
+            </picture>
+        </hero-section>
+        <main>
+            <!--INTRO-->
+            <section class="section">
+                <div class="container">
+                    <!--INTRO CONTENT-->
+                    <div class="flex wrap">
+                        <!--LEFT COLUMN-->
+                        <div class="gap-8">
+                            <!--HEADING AND CHECKLIST-->
+                            <div>
+                                <!--HEADING-->
+                                <content-wrapper-400
+                                label="We Are Ready"
+                                heading="Transformation From The Inside Out">
+                                </content-wrapper-400>
+                                <!--CHECKLIST-->
+                                <ul type="checklist">
+                                    <checklist-item
+                                    text="Installed new granite countertops and backsplash to create a more modern space.">
+                                    </checklist-item>
+                                    <checklist-item
+                                    text="Installed new granite countertops and backsplash to create a more modern space.">
+                                    </checklist-item>
+                                    <checklist-item
+                                    text="Installed new granite countertops and backsplash to create a more modern space.">
+                                    </checklist-item>
+                                </ul>
+                            </div>
+                            <cw-description
+                            text="This specific location was looking to modernize their property in order to maximize their profit when it came time to sell. We were able to evaluate the needs and meet them with quality products, efficent turnaround times, and a better ROI. ">
+                            </cw-description>
+                            <cw-100-list>
+                                <!--STAT 1-->
+                                <cw-100 slot="cw-1">
+                                    <h3 slot="heading">31.2K</h3>
+                                    <p slot="description">Website Visitor Per Day Using Our Tool</p>
+                                </cw-100>
+                                <!--STAT 2-->
+                                <cw-100 slot="cw-2">
+                                    <h3 slot="heading">2.3M</h3>
+                                    <p slot="description">Downloaded Total in 2018-2022</p>
+                                </cw-100>
+                                <!--STAT 3-->
+                                <cw-100 slot="cw-3">
+                                    <h3 slot="heading">50M</h3>
+                                    <p slot="description">Trusted By Customers Worldwide Over</p>
+                                </cw-100>
+                            </cw-100-list>
+                        </div>
+                        <!--RIGHT COLUMN-->
+                        <div class="gap-8">
+                            <highlights-list
+                            status="Completed"
+                            area="Braxton at Brier Creek (previously Carrington at Brier Creek)"
+                            location="12 Buildings + Clubhouse"
+                            type="242 Units"
+                            price="7 different floorplans"
+                            parking="78.08%">
+                            </highlights-list>
+                            <img-banner
+                            image-2x="assets/images/braxton/braxton-logo.png" image-3x="assets/images/braxton/braxton-logo.png"
+                            image-fallback="assets/images/braxton/braxton-logo.png">
+                            </img-banner>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+    </body>
+    <script src="assets/components/nav-menu.js"></script>
+</html>

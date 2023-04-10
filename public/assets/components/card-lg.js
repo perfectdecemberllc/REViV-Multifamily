@@ -87,26 +87,47 @@ class cardLg extends HTMLElement {
     connectedCallback() {
         const date = this.getAttribute('date');
         const title = this.getAttribute('title');
-        const href = this.getAttribute('href');
+        const link = this.getAttribute('link');
     
-        this.shadowRoot.querySelector('.date-text').textContent = date;
-        this.shadowRoot.querySelector('.title').textContent = title;
-        this.shadowRoot.querySelector('.view-details').setAttribute('href', href);
+        if (date) {
+            this.shadowRoot.querySelector('.date-text').textContent = date;
+        } else {
+            this.shadowRoot.querySelector('.date').style.display = 'none';
+        }
+      
+        if (title) {
+            this.shadowRoot.querySelector('.title').textContent = title;
+        } else {
+            this.shadowRoot.querySelector('.title').style.display = 'none';
+        }
+      
+        if (link) {
+            this.shadowRoot.querySelector('.view-details').setAttribute('href', link);
+        } else {
+            this.shadowRoot.querySelector('.view-details').style.display = 'none';
+        }
     }
     
     static get observedAttributes() {
-        return ['date', 'title', 'href'];
+        return ['date', 'title', 'link'];
     }
     
     attributeChangedCallback(name, oldValue, newValue) {
-        if (name === 'date') {
-          this.shadowRoot.querySelector('.date-text').textContent = newValue;
-        } else if (name === 'title') {
-          this.shadowRoot.querySelector('.title').textContent = newValue;
-        } else if (name === 'href') {
-          this.shadowRoot.querySelector('.view-details').setAttribute('href', newValue);
+        if (newValue === null) {
+          this.shadowRoot.querySelector(`.${name}`).style.display = 'none';
+        } else {
+          this.shadowRoot.querySelector(`.${name}`).style.display = '';
+    
+            if (name === 'date') {
+            this.shadowRoot.querySelector('.date-text').textContent = newValue;
+            } else if (name === 'title') {
+            this.shadowRoot.querySelector('.title').textContent = newValue;
+            } else if (name === 'link') {
+            this.shadowRoot.querySelector('.view-details').setAttribute('href', newValue);
+          }
         }
     }
+    
 }
 
 window.customElements.define('card-lg', cardLg);
