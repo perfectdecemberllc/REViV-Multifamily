@@ -9,6 +9,9 @@ cw100List.innerHTML = `
             max-width: 62.5rem;
             margin-inline: auto;
         }
+        :host([data-variation="case-study"]) {
+            margin-inline: 0;
+        }
     </style>
 
     <slot name="cw-1"></slot>
