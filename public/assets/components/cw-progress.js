@@ -45,9 +45,9 @@ class cwProgress extends HTMLElement {
         this.shadowRoot.querySelector('source[media="(min-resolution: 2dppx)"]').setAttribute('srcset', image2x);
       }
   
-      if (image3x) {
-        this.shadowRoot.querySelector('img').setAttribute('srcset', image3x);
-      }
+        if (image3x) {
+            this.shadowRoot.querySelector('source[media="(min-resolution: 3dppx)"]').setAttribute('srcset', image3x);
+        }
   
       if (imageFallback) {
         this.shadowRoot.querySelector('img').setAttribute('src', imageFallback);

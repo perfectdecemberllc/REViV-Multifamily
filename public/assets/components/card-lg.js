@@ -54,10 +54,16 @@ class cardLg extends HTMLElement {
                     color: var(--clr-primary-800);
                     transition: var(--btn-on);
                 }
-                slot[name="image"]::slotted(div) {
+                picture {
+                    display: block;
                     width: 100%;
-                    height: 411px;
-                    background-color: var(--clr-neutral-500);
+                    height: 25.6875rem;
+                }
+                img {
+                    width: 100%;
+                    max-width: none;
+                    height: 100%;
+                    object-fit: cover;
                 }
                 .text-button {
                     font-family: var(--ff-primary);
@@ -65,12 +71,14 @@ class cardLg extends HTMLElement {
                     line-height: var(--lh-100);
                     font-size: var(--fs-50);
                 }
-                @media (min-width: 51em) {
-                    
-                }
             </style>
+
             <div>
-                <slot name="image"></slot>
+                <picture>
+                    <source srcset="" media="(min-resolution: 3dppx)">
+                    <source srcset="" media="(min-resolution: 2dppx)">
+                    <img src="" alt="image">
+                </picture>
                 <div class="content-container">
                     <div class="details">
                         <div class="date-container">
@@ -88,6 +96,9 @@ class cardLg extends HTMLElement {
         const date = this.getAttribute('date');
         const title = this.getAttribute('title');
         const link = this.getAttribute('link');
+        const image2x = this.getAttribute('image-2x');
+        const image3x = this.getAttribute('image-3x');
+        const imageFallback = this.getAttribute('image-fallback');
     
         if (date) {
             this.shadowRoot.querySelector('.date-text').textContent = date;
@@ -106,10 +117,22 @@ class cardLg extends HTMLElement {
         } else {
             this.shadowRoot.querySelector('.view-details').style.display = 'none';
         }
+
+        if (image3x) {
+            this.shadowRoot.querySelector('source[media="(min-resolution: 3dppx)"]').setAttribute('srcset', image3x);
+        }
+
+        if (image2x) {
+            this.shadowRoot.querySelector('source[media="(min-resolution: 2dppx)"]').setAttribute('srcset', image2x);
+        }
+      
+        if (imageFallback) {
+            this.shadowRoot.querySelector('img').setAttribute('src', imageFallback);
+        }
     }
     
     static get observedAttributes() {
-        return ['date', 'title', 'link'];
+        return ['date', 'title', 'link', 'image-2x', 'image-3x', 'image-fallback'];
     }
     
     attributeChangedCallback(name, oldValue, newValue) {
@@ -119,12 +142,19 @@ class cardLg extends HTMLElement {
           this.shadowRoot.querySelector(`.${name}`).style.display = '';
     
             if (name === 'date') {
-            this.shadowRoot.querySelector('.date-text').textContent = newValue;
+                this.shadowRoot.querySelector('.date-text').textContent = newValue;
             } else if (name === 'title') {
-            this.shadowRoot.querySelector('.title').textContent = newValue;
+                this.shadowRoot.querySelector('.title').textContent = newValue;
             } else if (name === 'link') {
-            this.shadowRoot.querySelector('.view-details').setAttribute('href', newValue);
-          }
+                this.shadowRoot.querySelector('.view-details').setAttribute('href', newValue);
+            }
+        }
+        if (name === 'image-3x') {
+            this.shadowRoot.querySelector('source[media="(min-resolution: 3dppx)"]').setAttribute('srcset', newValue);
+        } else if (name === 'image-2x') {
+            this.shadowRoot.querySelector('source[media="(min-resolution: 2dppx)"]').setAttribute('srcset', newValue);
+        } else if (name === 'image-fallback') {
+            this.shadowRoot.querySelector('img').setAttribute('src', newValue);
         }
     }
     
