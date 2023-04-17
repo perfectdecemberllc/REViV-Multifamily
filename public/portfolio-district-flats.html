@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>District Flats</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="styles.css">
+        <script src="assets/components/hero.js"></script>
+        <script src="assets/components/btn.js"></script>
+        <script src="assets/components/page-intro.js"></script>
+        <script src="assets/components/cw-900.js"></script>
+        <script src="assets/components/cw400.js"></script>
+        <script src="assets/components/checklist-item.js"></script>
+        <script src="assets/components/cw-description.js"></script>
+        <script src="assets/components/highlights-list.js"></script>
+        <script src="assets/components/img-banner.js"></script>
+        <script src="assets/components/cw-100-list.js"></script>
+        <script src="assets/components/cw-100.js"></script>
+        <script src="assets/components/img-cs.js"></script>
+    </head>
+    <body>
+        <!--HERO SECTION-->
+        <hero-section data-variation="height-70">
+            <!--HERO CONTENT-->
+            <nav-menu slot="nav"></nav-menu>
+            <cw-900 slot="content">
+                <label slot="label-text" for="hero">Greenville, South Carolina</label>
+                <h1 slot="heading-text">District Flats</h1>
+            </cw-900>
+            <!--HERO IMAGE-->
+            <picture slot="hero-image">
+                <source media="(min-width: 300px)" srcset="
+                    assets/images/hero/hero_about_1x.webp 1x,
+                    assets/images/hero/hero_about_2x.webp 2x,
+                    assets/images/hero/hero_about_3x.webp 3x">
+
+                <img src="assets/images/hero/hero_about_1x.jpg" alt="">
+            </picture>
+        </hero-section>
+        <main>
+            <!--INTRO-->
+            <section class="section">
+                <div class="container">
+                    <!--INTRO CONTENT-->
+                    <div class="flex wrap justify-between">
+                        <!--LEFT COLUMN-->
+                        <div class="gap-8">
+                            <!--HEADING AND CHECKLIST-->
+                            <div>
+                                <!--HEADING-->
+                                <content-wrapper-400
+                                label="We Are Ready"
+                                heading="Efficient Upgrades for Better Results">
+                                </content-wrapper-400>
+                                <!--CHECKLIST-->
+                                <ul type="checklist">
+                                    <checklist-item
+                                    text="Replaced all carpet with new LVT and painted walls modern, updated colors to keep up with the new communities being built around it.">
+                                    </checklist-item>
+                                    <checklist-item
+                                    text="Replaced the appliances with luxury appliances and upgraded the granite countertops to quartz. The designer hand picked modern light fixtures, plumbing fixtures, pulls, and backsplash to bring the space together.">
+                                    </checklist-item>
+                                    <checklist-item
+                                    text="Repainted all the hallways throughout the community to include all new wall, door, and trim paint. Upgraded the lights to LED efficient lights and motion lights to reduce energy costs and brighten the space.">
+                                    </checklist-item>
+                                </ul>
+                            </div>
+                            <!--DESCRIPTION-->
+                            <cw-description
+                            text="With a full build-out, REViV worked to elevate this classic property to the modern gem that stands today. By adding upgrades both inside and outside, we were able to brighten the community as a whole.">
+                            </cw-description>
+                            <!--STATS-->
+                            <cw-100-list data-variation="case-study">
+                                <!--STAT 1-->
+                                <cw-100 slot="cw-1" data-variation="dark">
+                                    <h3 slot="heading">40%</h3>
+                                    <p slot="description">Occupany of units before renovations</p>
+                                </cw-100>
+                                <!--STAT 2-->
+                                <cw-100 slot="cw-2" data-variation="dark">
+                                    <h3 slot="heading">$500</h3>
+                                    <p slot="description">Increase of rent after renovations</p>
+                                </cw-100>
+                                <!--STAT 3-->
+                                <cw-100 slot="cw-3" data-variation="dark">
+                                    <h3 slot="heading">95%</h3>
+                                    <p slot="description">Occupancy of units after renovations with REViV</p>
+                                </cw-100>
+                            </cw-100-list>
+                        </div>
+                        <!--RIGHT COLUMN-->
+                        <div class="gap-8">
+                            <highlights-list
+                            status="Completed"
+                            area="District Flats"
+                            location="1 Building"
+                            type="197 Units"
+                            price="18 Unique Floorplans"
+                            parking="Expected ROI">
+                            </highlights-list>
+                            <img-banner
+                            image-2x="assets/images/district-flats/district-flats_logo.png" image-3x="assets/images/district-flats/district-flats_logo.png"
+                            image-fallback="assets/images/district-flats/district-flats_logo.png">
+                            </img-banner>
+                        </div>
+                    </div>
+                    <!--IMAGE LIST-->
+                    <ul class="flex wrap justify-between flex-gap-4 pt-12">
+                        <!--IMAGE 1-->
+                        <img-cs 
+                        image-2x="assets/images/district-flats/district-flats.png" 
+                        image-3x="assets/images/district-flats/district-flats.png" 
+                        image-fallback="assets/images/district-flats/district-flats.png">
+                        </img-cs>
+                        <!--IMAGE 2-->
+                        <img-cs 
+                        image-2x="assets/images/district-flats/district-flats.png" 
+                        image-3x="assets/images/district-flats/district-flats.png" 
+                        image-fallback="assets/images/district-flats/district-flats.png">
+                        </img-cs>
+                        <!--IMAGE 3-->
+                        <img-cs 
+                        image-2x="assets/images/district-flats/district-flats.png" 
+                        image-3x="assets/images/district-flats/district-flats.png" 
+                        image-fallback="assets/images/district-flats/district-flats.png"">
+                        </img-cs>
+                        <!--IMAGE 4-->
+                        <img-cs 
+                        image-2x="assets/images/district-flats/district-flats.png" 
+                        image-3x="assets/images/district-flats/district-flats.png" 
+                        image-fallback="assets/images/district-flats/district-flats.png">
+                        </img-cs>
+                    </ul>
+                </div>
+            </section>
+            <section class="section">
+                <div class="container">
+                    
+                </div>
+            </section>
+        </main>
+    </body>
+    <script src="assets/components/nav-menu.js"></script>
+</html>
