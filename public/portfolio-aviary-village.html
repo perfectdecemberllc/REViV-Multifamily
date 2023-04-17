@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Aviary Village</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="styles.css">
+        <script src="assets/components/hero.js"></script>
+        <script src="assets/components/btn.js"></script>
+        <script src="assets/components/page-intro.js"></script>
+        <script src="assets/components/cw-900.js"></script>
+        <script src="assets/components/cw400.js"></script>
+        <script src="assets/components/checklist-item.js"></script>
+        <script src="assets/components/cw-description.js"></script>
+        <script src="assets/components/highlights-list.js"></script>
+        <script src="assets/components/img-banner.js"></script>
+        <script src="assets/components/cw-100-list.js"></script>
+        <script src="assets/components/cw-100.js"></script>
+        <script src="assets/components/img-cs.js"></script>
+    </head>
+    <body>
+        <!--HERO SECTION-->
+        <hero-section data-variation="height-70">
+            <!--HERO CONTENT-->
+            <nav-menu slot="nav"></nav-menu>
+            <cw-900 slot="content">
+                <label slot="label-text" for="hero">Greenville, South Carolina</label>
+                <h1 slot="heading-text">Aviary Village</h1>
+            </cw-900>
+            <!--HERO IMAGE-->
+            <picture slot="hero-image">
+                <source media="(min-width: 300px)" srcset="
+                    assets/images/hero/hero_about_1x.webp 1x,
+                    assets/images/hero/hero_about_2x.webp 2x,
+                    assets/images/hero/hero_about_3x.webp 3x">
+
+                <img src="assets/images/hero/hero_about_1x.jpg" alt="">
+            </picture>
+        </hero-section>
+        <main>
+            <!--INTRO-->
+            <section class="section">
+                <div class="container">
+                    <!--INTRO CONTENT-->
+                    <div class="flex wrap justify-between">
+                        <!--LEFT COLUMN-->
+                        <div class="gap-8">
+                            <!--HEADING AND CHECKLIST-->
+                            <div>
+                                <!--HEADING-->
+                                <content-wrapper-400
+                                label="We Are Ready"
+                                heading="Efficient Upgrades for Better Results">
+                                </content-wrapper-400>
+                                <!--CHECKLIST-->
+                                <ul type="checklist">
+                                    <checklist-item
+                                    text="Replaced all cabinet doors, refinished the walls, trim, doors, and cabinet boxes, installed new pulls, granite countertops, and appliances.">
+                                    </checklist-item>
+                                    <checklist-item
+                                    text="Replaced the flooring with new modern LVP and fresh carpet in the bedrooms.">
+                                    </checklist-item>
+                                    <checklist-item
+                                    text="Added all new black led light fixtures, plumbing fixtures, and hardware throughout the unit.">
+                                    </checklist-item>
+                                </ul>
+                            </div>
+                            <!--DESCRIPTION-->
+                            <cw-description
+                            text="At Aviary, our team worked intentionally to increase property value by replacing older appliances and outdated finishes with up-to-date, modern finishes.">
+                            </cw-description>
+                            <!--STATS-->
+                            <cw-100-list data-variation="case-study">
+                                <!--STAT 1-->
+                                <cw-100 slot="cw-1" data-variation="dark">
+                                    <h3 slot="heading">$550</h3>
+                                    <p slot="description">Increase in rent after renovations</p>
+                                </cw-100>
+                                <!--STAT 2-->
+                                <cw-100 slot="cw-2" data-variation="dark">
+                                    <h3 slot="heading">$10,173</h3>
+                                    <p slot="description">Average price of renovation per unit</p>
+                                </cw-100>
+                                <!--STAT 3-->
+                                <cw-100 slot="cw-3" data-variation="dark">
+                                    <h3 slot="heading">95%</h3>
+                                    <p slot="description">Occupancy of units after renovations with REViV</p>
+                                </cw-100>
+                            </cw-100-list>
+                        </div>
+                        <!--RIGHT COLUMN-->
+                        <div class="gap-8">
+                            <highlights-list
+                            status="Completed"
+                            area="District Flats"
+                            location="1 Building"
+                            type="197 Units"
+                            price="18 Unique Floorplans"
+                            parking="Expected ROI">
+                            </highlights-list>
+                            <img-banner
+                            image-2x="assets/images/aviary-village/aviary-village_logo.png" image-3x="assets/images/aviary-village/aviary-village_logo.png"
+                            image-fallback="assets/images/aviary-village/aviary-village_logo.png">
+                            </img-banner>
+                        </div>
+                    </div>
+                    <!--IMAGE LIST-->
+                    <ul class="flex wrap justify-between flex-gap-4 pt-12">
+                        <!--IMAGE 1-->
+                        <img-cs 
+                        image-2x="assets/images/district-flats/district-flats.png" 
+                        image-3x="assets/images/district-flats/district-flats.png" 
+                        image-fallback="assets/images/district-flats/district-flats.png">
+                        </img-cs>
+                        <!--IMAGE 2-->
+                        <img-cs 
+                        image-2x="assets/images/district-flats/district-flats.png" 
+                        image-3x="assets/images/district-flats/district-flats.png" 
+                        image-fallback="assets/images/district-flats/district-flats.png">
+                        </img-cs>
+                        <!--IMAGE 3-->
+                        <img-cs 
+                        image-2x="assets/images/district-flats/district-flats.png" 
+                        image-3x="assets/images/district-flats/district-flats.png" 
+                        image-fallback="assets/images/district-flats/district-flats.png"">
+                        </img-cs>
+                        <!--IMAGE 4-->
+                        <img-cs 
+                        image-2x="assets/images/district-flats/district-flats.png" 
+                        image-3x="assets/images/district-flats/district-flats.png" 
+                        image-fallback="assets/images/district-flats/district-flats.png">
+                        </img-cs>
+                    </ul>
+                </div>
+            </section>
+            <section class="section">
+                <div class="container">
+                    
+                </div>
+            </section>
+        </main>
+    </body>
+    <script src="assets/components/nav-menu.js"></script>
+</html>
