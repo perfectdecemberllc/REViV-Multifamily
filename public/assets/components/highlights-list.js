@@ -7,6 +7,8 @@ class HighlightsList extends HTMLElement {
         <style>
           :host {
             display: grid;
+            grid-auto-flow: row;
+            grid-template-rows: max-content;
             gap: 1rem;
             padding: 2.5rem 3.5rem;
             max-width: 23.175rem; 
