@@ -48,6 +48,15 @@ class ceoQuote extends HTMLElement {
                 width: 100%;
                 justify-content: right;
             }
+            .ceo {
+              width: 4.5rem;
+              height: 4.5rem;
+              border-radius: 50%;
+              overflow: hidden;
+            }
+            .ceo img {
+              width: 100%;
+            }
             @media (min-width: 1024px) {
                 :host {
                     padding: 2.5rem 5rem 1.5rem;
@@ -60,7 +69,7 @@ class ceoQuote extends HTMLElement {
         </div>
         <div class="container">
           <div class="ceo">
-            <img src="assets/images/ceo.jpg" alt="Avatar">
+            <img src="assets/images/quote_devon_2x.webp" alt="Avatar">
           </div>
           <div class="signature">
             <img src="assets/images/signature.png" alt="Signature">
