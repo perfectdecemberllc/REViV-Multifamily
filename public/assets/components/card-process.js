@@ -12,12 +12,13 @@ class cardProcess extends HTMLElement {
                     border-radius: var(--br-700);
                     box-shadow: var(--ds-primary);
                     background-color: var(--clr-accent-700);
-                    padding: 3.5rem 2rem 3rem 1.5rem;
+                    padding: 3.5rem 2rem 3rem 5rem;
                 }
                 .number {
                     position: absolute;
                     z-index: 1;
                     top: -2rem;
+                    left: -2rem;
                     left: 0;
                 }
                 .number-text {
