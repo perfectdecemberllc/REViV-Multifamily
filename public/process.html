@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>ReViv | Process</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="styles.css">
+        <script src="assets/components/hero.js"></script>
+        <script src="assets/components/btn.js"></script>
+        <script src="assets/components/page-intro.js"></script>
+        <script src="assets/components/card-process.js"></script>
+        <script src="assets/components/cw-400.js"></script>
+        <script src="assets/components/cw-900.js"></script>
+        <script src="assets/components/logo-list.js"></script>
+        <script src="assets/components/card-xs.js"></script>
+    </head>
+    <body>
+        <!--HERO SECTION-->
+        <hero-section data-variation="height-70">
+            <!--HERO CONTENT-->
+            <nav-menu slot="nav"></nav-menu>
+            <cw-900 slot="content">
+                <label slot="label-text" for="hero">ReViv Your Approach</label>
+                <h1 slot="heading-text">Redefine Your Value Add</h1>
+                <btn-component slot="button" href="#" data-variation="filled">Discover More</btn-component>
+            </cw-900>
+            <!--HERO IMAGE-->
+            <picture slot="hero-image">
+                <source media="(min-width: 300px)" srcset="
+                    assets/images/hero/hero_services_1x.webp 1x,
+                    assets/images/hero/hero_services_2x.webp 2x,
+                    assets/images/hero/hero_services_3x.webp 3x">
+
+                <img src="assets/images/hero/hero_about_1x.jpg" alt="">
+            </picture>
+        </hero-section>
+        <!--INTRO AND CORE VALUES-->
+        <main>
+            <!--INTRO-->
+            <section class="section">
+                <div class="container flex justify-between align-center">
+                    <!--INTRO CONTENT-->
+                    <page-intro data-variation="left-aligned">
+                        <h2 slot="heading">How We Differ From Our Competitors</h2>
+                        <p slot="description">Driven by distinct service and pride in our work, we aim to become the leader in multifamily renovations, elevating the communities we touch and those who call them home. REViV is founded on the belief that, despite an outward appearance, there is an intrinsic value in everything. We coalesced behind the concept "to revive" because it means "to give life to" or "restore to its former glory." In other words, REViV is a company that gives second chances, both to broken people and structures because of the intrinsic value within.</p>
+                    </page-intro>
+                    <!--ARROWS-->
+                    <svg width="29" height="130" viewBox="0 0 29 130" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M0 115.308L14.5005 130L29 115.308H22.2824L14.5005 123.193L6.7176 115.308H0Z" fill="#216AA2"/>
+                        <path d="M0 49.4178L14.5005 64.1096L29 49.4178H22.2824L14.5005 57.3029L6.7176 49.4178H0Z" fill="#216AA2"/>
+                        <path d="M0 82.363L14.5005 97.0548L29 82.363H22.2824L14.5005 90.2481L6.7176 82.363H0Z" fill="#216AA2"/>
+                        <path d="M0 16.4726L14.5005 31.1644L29 16.4726H22.2824L14.5005 24.3577L6.7176 16.4726H0Z" fill="#216AA2"/>
+                        <path d="M0 98.8356L14.5005 113.527L29 98.8356H22.2824L14.5005 106.721L6.7176 98.8356H0Z" fill="#216AA2"/>
+                        <path d="M0 32.9452L14.5005 47.637L29 32.9452H22.2824L14.5005 40.8303L6.7176 32.9452H0Z" fill="#216AA2"/>
+                        <path d="M0 65.8904L14.5005 80.5822L29 65.8904H22.2824L14.5005 73.7755L6.7176 65.8904H0Z" fill="#216AA2"/>
+                        <path d="M0 2.56879e-06L14.5005 14.6918L29 0L22.2824 5.95037e-07L14.5005 7.88509L6.7176 1.97375e-06L0 2.56879e-06Z" fill="#216AA2"/>
+                    </svg>     
+                </div>
+            </section>
+            <!--PROCESS-->
+            <section class="section">
+                <div class="container flex wrap flex-gap-4">
+                    <card-process
+                        number="1"
+                        title="ROI-Focused Insights & Market Knowledge"
+                        text="Our unique backgrounds in construction and property valuation offer your team value-add expertise that will impact your ROI. From researching comps in the area to market research, we are here to support you and give guidance on the best possible renovation package for your property.">
+                    </card-process>
+                    <card-process
+                        number="2"
+                        title="Estimate Quote Package"
+                        text="Our skilled team of estimators work side by side with the client to tailor a renovation package that is within your budget and achieves the highest return on investment possible. We desire to be the do it all company when it comes to renovations. We have a skilled team that is ready to take on any interior or exterior project that brings value to your property. In this part of the process, we will account for your budget specifications, target ROI, project timeline, and upgrade options.">
+                    </card-process>
+                    <card-process
+                        number="3"
+                        title="Turn-Key Services Inside and Out"
+                        text="Once a package is selected, we get to work. We manage the complete process from concept to completion, including every amenity or detail, for a turnkey result you can trust. Our business model involves using in-house
+                        team members who are highly trained and skilled to focus on quality of work and
+                        timeliness.">
+                    </card-process>
+                    <card-process
+                        number="4"
+                        title="Timely Unit Turns"
+                        text="We understand that timeliness is a key indicator of success when renovating a unit. With our experienced staff, we can hit your desired timeline for unit turnaround. In fact, we encourage pre-leasing units to minimize the time that a unit is unoccupied.">
+                    </card-process>
+                    <card-process
+                        number="5"
+                        title="Achieve Value Add"
+                        text="Upon completion of interior and exterior renovations, we build our
+                        brand on the quality of work that we provide and celebrate along with our clients the value add provided through the renovation process. REViV's success will always go hand in hand with our clients' success.">
+                    </card-process>
+                </div>
+            </section>
+            <!--CLIENT LOGOS AND TESTIMONIALS-->
+            <section class="section gap-md transparent-img" data-variation="illustration">
+                <!--CLIENT LOGOS-->
+                <div class="container">
+                    <logo-list>
+                        <!--LOGO 1-->
+                        <picture slot="logo-1">
+                            <source media="(min-width: 300px)" srcset="
+                                assets/images/client-logos/aviary_1x.webp 1x,
+                                assets/images/client-logos/aviary_2x.webp 2x,
+                                assets/images/client-logos/aviary_3x.webp 3x">
+                            <img class="w-full" slot="realtorAvatar" src="assets/images/client-logos/aviary_1x.png" alt="">
+                        </picture>
+                        <!--LOGO 2-->
+                        <picture slot="logo-2">
+                            <source media="(min-width: 300px)" srcset="
+                                assets/images/client-logos/bluewater_1x.webp 1x,
+                                assets/images/client-logos/bluewater_2x.webp 2x,
+                                assets/images/client-logos/bluewater_3x.webp 3x">
+                            <img class="w-full" slot="realtorAvatar" src="assets/images/client-logos/bluewater_1x.png" alt="">
+                        </picture>
+                        <!--LOGO 3-->
+                        <picture slot="logo-3">
+                            <source media="(min-width: 300px)" srcset="
+                                assets/images/client-logos/braxton_1x.webp 1x,
+                                assets/images/client-logos/braxton_2x.webp 2x,
+                                assets/images/client-logos/braxton_3x.webp 3x">
+                            <img class="w-full" slot="realtorAvatar" src="assets/images/client-logos/braxton_1x.png" alt="">
+                        </picture>
+                        <!--LOGO 4-->
+                        <picture slot="logo-4">
+                            <source media="(min-width: 300px)" srcset="
+                                assets/images/client-logos/district_1x.webp 1x,
+                                assets/images/client-logos/district_2x.webp 2x,
+                                assets/images/client-logos/district_3x.webp 3x">
+                            <img class="w-full" slot="realtorAvatar" src="assets/images/client-logos/district_1x.png" alt="">
+                        </picture>
+                        <!--LOGO 5-->
+                        <picture slot="logo-5">
+                            <source media="(min-width: 300px)" srcset="
+                                assets/images/client-logos/park_1x.webp 1x,
+                                assets/images/client-logos/park_2x.webp 2x,
+                                assets/images/client-logos/park_3x.webp 3x">
+                            <img class="w-full" slot="realtorAvatar" src="assets/images/client-logos/park_1x.png" alt="">
+                        </picture>
+                        <!--LOGO 6-->
+                        <picture slot="logo-5">
+                            <source media="(min-width: 300px)" srcset="
+                                assets/images/client-logos/terrace_1x.webp 1x,
+                                assets/images/client-logos/terrace_2x.webp 2x,
+                                assets/images/client-logos/terrace_3x.webp 3x">
+                            <img class="w-full" slot="realtorAvatar" src="assets/images/client-logos/terrace_1x.png" alt="">
+                        </picture>
+                    </logo-list>
+                </div>
+                <!--TESTIMONIALS-->
+                <div class="container">
+                    <customer-testimonials>
+                        <ul type="testimonials">
+                            <!--TESTIMONIAL BUTTON 0-->
+                            <card-xs slot="name-0" role="button" tabindex="0" aria-selected="true">
+                                <picture slot="realtorAvatar">
+                                    <source media="(min-width: 300px)" srcset="
+                                        assets/images/testimonials/testimonial_cavin_2x.webp 1x,
+                                        assets/images/testimonials/testimonial_cavin_2x.webp 2x,
+                                        assets/images/testimonials/testimonial_cavin_3x.webp 3x">
+                                    <img src="assets/images/testimonials/testimonial_cavin_1x.jpg" alt="">
+                                </picture>
+                                <h3 slot="propertyName">Front Porch Housing</h3>
+                                <h1 slot="realtorName">LeeAnne Cavin</h1>
+                            </card-xs>
+                            <!--TESTIMONIAL BUTTON 1-->
+                            <card-xs slot="name-1" role="button" tabindex="0">
+                                <picture slot="realtorAvatar">
+                                    <source media="(min-width: 300px)" srcset="
+                                        assets/images/testimonials/testimonial_smith_2x.webp 1x,
+                                        assets/images/testimonials/testimonial_smith_2x.webp 2x,
+                                        assets/images/testimonials/testimonial_smith_3x.webp 3x">
+                                    <img src="assets/images/testimonials/testimonial_smith_1x.jpg" alt="">
+                                </picture>
+                                <h3 slot="propertyName">VP Ancient City Capital</h3>
+                                <h1 slot="realtorName">Andrew Walker</h1>
+                            </card-xs>
+                            <!--TESTIMONIAL BUTTON 2-->
+                            <card-xs slot="name-2" role="button" tabindex="0">
+                                <picture slot="realtorAvatar">
+                                    <source media="(min-width: 300px)" srcset="
+                                        assets/images/testimonials/testimonial_smith_2x.webp 1x,
+                                        assets/images/testimonials/testimonial_smith_2x.webp 2x,
+                                        assets/images/testimonials/testimonial_smith_3x.webp 3x">
+                                    <img src="assets/images/testimonials/testimonial_smith_1x.jpg" alt="">
+                                </picture>
+                                <h3 slot="propertyName">Impact Commercial Services, LLC</h3>
+                                <h1 slot="realtorName">Trent Smith</h1>
+                            </card-xs>
+                        </ul>
+                        <!--TESTIMONIAL QUOTE 0-->
+                        <cw-400 role="testimonial" slot="quote-0" aria-hidden="false">
+                            <h5 slot="label">Testimonials</h5>
+                            <h2 slot="heading">Skills, Service and Generosity</h2>
+                            <p slot="description">REViV's support of Front Porch Housing in Greenville, SC is greatly appreciated. Our property benefited from their skill, service, and generosity. Front Porch is a better community with quality materials and units because of REViV.</p>
+                        </cw-400>
+                        <!--TESTIMONIAL QUOTE 1-->
+                        <cw-400 role="testimonial" slot="quote-1" aria-hidden="true">
+                            <h5 slot="label">Testimonials</h5>
+                            <h2 slot="heading">On Time and Creative</h2>
+                            <p slot="description">REViV has been an absolute pleasure to work with. They are currently working on five separate properties in our portfolio. REViV has completed projects on time and has made suggestions that the residents love and saved ownership money.</p>
+                        </cw-400>
+                        <!--TESTIMONIAL QUOTE 2-->
+                        <cw-400 role="testimonial" slot="quote-2" aria-hidden="true">
+                            <h5 slot="label">Testimonials</h5>
+                            <h2 slot="heading">Attention to Detail</h2>
+                            <p slot="description">I appreciate Reviv’s attention to details and their turnkey approach to the work. Our clients require very detailed information during the projects and Reviv has consistently provided quality work, up to date and accurate progress tracking, scheduling, and billing. They take a partnership approach to these projects and always provide solutions to problems when they come up.</p>
+                        </cw-400>
+                    </customer-testimonials>
+                </div>
+            </section>
+        </main>
+    </body>
+    <script src="assets/components/nav-menu.js"></script>
+    <script src="assets/components/testimonials.js"></script>
+</html>
