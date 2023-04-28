@@ -13,7 +13,7 @@ class imgCs extends HTMLElement {
             overflow: hidden;
           }
           img {
-            width: 100%;
+            width: initial;
             height: 100%;
             object-fit: cover;
           }
