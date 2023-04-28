@@ -11,6 +11,7 @@ cw100List.innerHTML = `
         }
         :host([data-variation="case-study"]) {
             margin-inline: 0;
+            justify-content: start;
         }
     </style>
 

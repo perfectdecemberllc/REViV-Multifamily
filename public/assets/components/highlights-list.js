@@ -12,7 +12,7 @@ class HighlightsList extends HTMLElement {
             gap: 1rem;
             padding: 2.5rem 3.5rem;
             max-width: 23.175rem; 
-            background-color: var(--clr-accent-500);
+            background-color: var(--clr-accent-700);
             border-radius: var(--br-700);
           }
           .heading {
@@ -59,31 +59,31 @@ class HighlightsList extends HTMLElement {
             <svg xmlns="http://www.w3.org/2000/svg" width="5" height="10" fill="none" viewBox="0 0 5 10">
               <path fill="#ffffff" d="m0 10 5-5-5-5v10Z"/>
             </svg>
-            <p>Area: <span class="area"></span></p>
+            <p>Name: <span class="area"></span></p>
           </li>
           <li>
             <svg xmlns="http://www.w3.org/2000/svg" width="5" height="10" fill="none" viewBox="0 0 5 10">
               <path fill="#ffffff" d="m0 10 5-5-5-5v10Z"/>
             </svg>
-            <p>Location: <span class="location"></span></p>
+            <p>Type: <span class="location"></span></p>
           </li>
           <li>
             <svg xmlns="http://www.w3.org/2000/svg" width="5" height="10" fill="none" viewBox="0 0 5 10">
               <path fill="#ffffff" d="m0 10 5-5-5-5v10Z"/>
             </svg>
-            <p>Type: <span class="type"></span></p>
+            <p>Quantity: <span class="type"></span></p>
           </li>
           <li>
             <svg xmlns="http://www.w3.org/2000/svg" width="5" height="10" fill="none" viewBox="0 0 5 10">
               <path fill="#ffffff" d="m0 10 5-5-5-5v10Z"/>
             </svg>
-            <p>Price: <span class="price"></span></p>
+            <p>Floorplans: <span class="price"></span></p>
           </li>
           <li>
             <svg xmlns="http://www.w3.org/2000/svg" width="5" height="10" fill="none" viewBox="0 0 5 10">
               <path fill="#ffffff" d="m0 10 5-5-5-5v10Z"/>
             </svg>
-            <p>Parking: <span class="parking"></span></p>
+            <p>Expected ROI: <span class="parking"></span></p>
           </li>
         </ul>
       `;

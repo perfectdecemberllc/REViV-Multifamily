@@ -16,7 +16,7 @@ class CW400 extends HTMLElement {
 
             .heading-container {
                 margin-bottom: 1rem;
-                max-width: 45ch;
+                max-width: 55ch;
             }
 
             .label-container {

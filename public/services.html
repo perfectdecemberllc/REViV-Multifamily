@@ -45,7 +45,7 @@
         <main>
             <!--INTRO-->
             <section class="section">
-                <div class="container flex justify-between align-center">
+                <div class="container flex flex-gap-12 align-center">
                     <!--INTRO CONTENT-->
                     <page-intro data-variation="left-aligned">
                         <h2 slot="heading">Welcome to the REViV Family</h2>
@@ -173,74 +173,63 @@
                 </div>
             </section>
             <!--CAROUSEL-->
-            <section class="section gap-sm bg-neutral-100">
-                <!--HEADING-->
-                <div class="container flex wrap gap-4 justify-between align-bottom">
-                    <cw-300>
-                        <h3 slot="heading">Our Recent Projects</h3>
-                        <p slot="description">We are constantly working on bettering the communities around us. Take a look at some of our most recent work and see why our clients love what we do.</p>
-                    </cw-300>
-                    <btn-component href="#" data-variation="stroked">View All</btn-component>
-                </div>
-                <!--CAROUSEL-->
-                <card-carousel>
-                    <card-md 
-                        slot="one" 
-                        address="11010 Eastlake Club Dr, Raleigh, NC" 
-                        title="Braxton At Brier Creek"" 
-                        link="portfolio-braxton.html" 
-                        image-3x="assets/images/braxton/braxton_card-md_3x.webp" 
-                        image-2x="assets/images/braxton/braxton_card-md_2x.webp" 
-                        image-fallback="assets/images/braxton/braxton_card-md_1x.webp">
-                    </card-md>
-                    <card-md 
-                        slot="two" 
-                        address="300 N Hwy 25 Bypass, Greenville, SC" 
-                        title="Park At Uptown" 
-                        link="portfolio-uptown.html" 
-                        image-3x="assets/images/colony-north/colony-north_card-md_3x.webp" 
-                        image-2x="assets/images/colony-north/colony-north_card-md_2x.webp" 
-                        image-fallback="assets/images/colony-north/colony-north_card-md_1x.webp">
-                    </card-md>
-                    <card-md 
-                        slot="three" 
-                        address="1449 S Church St, Charlotte, NC" 
-                        title="District Flats" 
-                        link="portfolio-district-flats.html" 
-                        image-3x="assets/images/district-flats/district-flats_card-md_3x.webp" 
-                        image-2x="assets/images/district-flats/district-flats_card-md_2x.webp" 
-                        image-fallback="assets/images/district-flats/district-flats_card-md_1x.webp">
-                    </card-md>
-                    <card-md 
-                        slot="four" 
-                        address="1680 Bluewater way, Charleston, SC" 
-                        title="Bluewater At Bolton's Landing" 
-                        link="portfolio-bluewater.html" 
-                        image-3x="assets/images/bluewater/bluewater_card-md_3x.webp" 
-                        image-2x="assets/images/bluewater/bluewater_card-md_2x.webp" 
-                        image-fallback="assets/images/bluewater/bluewater_card-md_1x.webp">
-                    </card-md>
-                    <card-md 
-                        slot="five" 
-                        address="771 E Butler Rd, Mauldin, SC" 
-                        title="Terrace At Butler" 
-                        link="portfolio-terrace-butler.html" 
-                        image-3x="assets/images/terrace-butler/terrace-butler_card-md_3x.webp" 
-                        image-2x="assets/images/terrace-butler/terrace-butler_card-md_2x.webp" 
-                        image-fallback="assets/images/terrace-butler/terrace-butler_card-md_1x.webp">
-                    </card-md>
-                    <card-md 
-                        slot="six" 
-                        address="
-                        555 Wild Wing Blvd, Conway, SC" 
-                        title="Aviary Village" 
-                        link="portfolio-aviary.html" 
-                        image-3x="assets/images/bluewater/bluewater_card-md_3x.webp" 
-                        image-2x="assets/images/bluewater/bluewater_card-md_2x.webp" 
-                        image-fallback="assets/images/bluewater/bluewater_card-md_1x.webp">
-                    </card-md>
-                </card-carousel>
-            </section>
+            <card-carousel class="section gap-sm bg-neutral-100">
+                <card-md 
+                    slot="one" 
+                    address="11010 Eastlake Club Dr, Raleigh, NC" 
+                    title="Braxton At Brier Creek"" 
+                    link="portfolio-braxton.html" 
+                    image-3x="assets/images/braxton/braxton_card-md_3x.webp" 
+                    image-2x="assets/images/braxton/braxton_card-md_2x.webp" 
+                    image-fallback="assets/images/braxton/braxton_card-md_1x.webp">
+                </card-md>
+                <card-md 
+                    slot="two" 
+                    address="300 N Hwy 25 Bypass, Greenville, SC" 
+                    title="Park At Uptown" 
+                    link="portfolio-park-uptown.html" 
+                    image-3x="assets/images/colony-north/colony-north_card-md_3x.webp" 
+                    image-2x="assets/images/colony-north/colony-north_card-md_2x.webp" 
+                    image-fallback="assets/images/colony-north/colony-north_card-md_1x.webp">
+                </card-md>
+                <card-md 
+                    slot="three" 
+                    address="1449 S Church St, Charlotte, NC" 
+                    title="District Flats" 
+                    link="portfolio-district-flats.html" 
+                    image-3x="assets/images/district-flats/district-flats_card-md_3x.webp" 
+                    image-2x="assets/images/district-flats/district-flats_card-md_2x.webp" 
+                    image-fallback="assets/images/district-flats/district-flats_card-md_1x.webp">
+                </card-md>
+                <card-md 
+                    slot="four" 
+                    address="1680 Bluewater way, Charleston, SC" 
+                    title="Bluewater At Bolton's Landing" 
+                    link="portfolio-bluewater.html" 
+                    image-3x="assets/images/bluewater/bluewater_card-md_3x.webp" 
+                    image-2x="assets/images/bluewater/bluewater_card-md_2x.webp" 
+                    image-fallback="assets/images/bluewater/bluewater_card-md_1x.webp">
+                </card-md>
+                <card-md 
+                    slot="five" 
+                    address="771 E Butler Rd, Mauldin, SC" 
+                    title="Terrace At Butler" 
+                    link="portfolio-terrace-butler.html" 
+                    image-3x="assets/images/terrace-butler/terrace-butler_card-md_3x.webp" 
+                    image-2x="assets/images/terrace-butler/terrace-butler_card-md_2x.webp" 
+                    image-fallback="assets/images/terrace-butler/terrace-butler_card-md_1x.webp">
+                </card-md>
+                <card-md 
+                    slot="six" 
+                    address="
+                    555 Wild Wing Blvd, Conway, SC" 
+                    title="Aviary Village" 
+                    link="portfolio-aviary-village.html" 
+                    image-3x="assets/images/bluewater/bluewater_card-md_3x.webp" 
+                    image-2x="assets/images/bluewater/bluewater_card-md_2x.webp" 
+                    image-fallback="assets/images/bluewater/bluewater_card-md_1x.webp">
+                </card-md>
+            </card-carousel>
             <!--FOOTER-->
             <footer class="section bg-accent-500 transparent-img" data-variation="footer">
                 <div class="container">

@@ -29,7 +29,7 @@ footerLeftColumn.innerHTML = `
             margin: 0;
             color: var(--clr-neutral-200);
             font-family: var(--ff-primary);
-            font-size: var(--fs-400);
+            font-size: var(--fs-300);
             font-weight: var(--fw-normal);
             line-height: var(--lh-500);
         }

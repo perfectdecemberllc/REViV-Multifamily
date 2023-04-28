@@ -9,7 +9,7 @@ class ChecklistItem extends HTMLElement {
                 display: flex;
                 gap: 1rem;
                 align-items: baseline;
-                max-width: 65ch;
+                max-width: 75ch;
             }
             img {
                 display: block;
