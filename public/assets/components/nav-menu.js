@@ -211,7 +211,7 @@ class NavMenu extends HTMLElement {
             <li><a href="process.html">Process</a></li>
             <li><a href="portfolio.html">Portfolio</a></li>
             <li><a href="about-us.html">About Us</a></li>
-            <li><a href="#">Contact Us</a></li>
+            <li><a href="https://6mh4s7svri2.typeform.com/to/Ar8jxWPB">Contact Us</a></li>
             
           </ul>
         </div>
