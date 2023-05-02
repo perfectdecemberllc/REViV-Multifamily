@@ -184,10 +184,10 @@ class cardMd extends HTMLElement {
                 this.shadowRoot.querySelector('.text-button').setAttribute('href', newValue);
             }
         }
-        if (name === 'image-3x') {
-            this.shadowRoot.querySelector('source[media="(min-resolution: 3dppx)"]').setAttribute('srcset', newValue);
-        } else if (name === 'image-2x') {
+        if (name === 'image-2x') {
             this.shadowRoot.querySelector('source[media="(min-resolution: 2dppx)"]').setAttribute('srcset', newValue);
+        } else if (name === 'image-3x') {
+            this.shadowRoot.querySelector('source[media="(min-resolution: 3dppx)"]').setAttribute('srcset', newValue);
         } else if (name === 'image-fallback') {
             this.shadowRoot.querySelector('img').setAttribute('src', newValue);
         }
