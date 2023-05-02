@@ -99,9 +99,9 @@ class cardMd extends HTMLElement {
             </style>
             <div>
                 <picture>
-                    <source srcset="" media="(min-resolution: 3dppx)">
-                    <source srcset="" media="(min-resolution: 2dppx)">
-                    <img src="" alt="image">
+                    <source media="(min-resolution: 3dppx)">
+                    <source media="(min-resolution: 2dppx)">
+                    <img alt="image">
                 </picture>
                 <div class="content-container">
                     <div class="content">
