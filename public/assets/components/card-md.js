@@ -53,7 +53,6 @@ class cardMd extends HTMLElement {
                     font-weight: var(--fw-regular);
                     font-size: var(--fs-label-lg);
                     color: var(--clr-neutral-500);
-                    margin: 0;
                 }
                 .content-container a {
                     color: var(--clr-primary-500);
@@ -63,6 +62,9 @@ class cardMd extends HTMLElement {
                 .content-container a:hover {
                     color: var(--clr-primary-800);
                     transition: var(--btn-on);
+                }
+                picture {
+                    display: block;
                 }
                 img {
                     width: 100%;
@@ -99,9 +101,9 @@ class cardMd extends HTMLElement {
             </style>
             <div>
                 <picture>
-                    <source media="(min-resolution: 3dppx)">
-                    <source media="(min-resolution: 2dppx)">
-                    <img alt="image">
+                    <source srcset="" media="(min-resolution: 3dppx)">
+                    <source srcset="" media="(min-resolution: 2dppx)">
+                    <img src="" alt="image">
                 </picture>
                 <div class="content-container">
                     <div class="content">
@@ -151,12 +153,12 @@ class cardMd extends HTMLElement {
             this.shadowRoot.querySelector('.text-button').style.display = 'none';
         }
 
-        if (image3x) {
-            this.shadowRoot.querySelector('source[media="(min-resolution: 3dppx)"]').setAttribute('srcset', image3x);
-        }
-
         if (image2x) {
             this.shadowRoot.querySelector('source[media="(min-resolution: 2dppx)"]').setAttribute('srcset', image2x);
+        }
+
+        if (image3x) {
+            this.shadowRoot.querySelector('source[media="(min-resolution: 3dppx)"]').setAttribute('srcset', image3x);
         }
         
         if (imageFallback) {

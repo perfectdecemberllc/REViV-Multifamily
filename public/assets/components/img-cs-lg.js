@@ -41,8 +41,8 @@ class imgCsLg extends HTMLElement {
       }
   
       if (image3x) {
-        this.shadowRoot.querySelector('img').setAttribute('srcset', image3x);
-      }
+        this.shadowRoot.querySelector('source[media="(min-resolution: 3dppx)"]').setAttribute('srcset', image3x);
+    }
   
       if (imageFallback) {
         this.shadowRoot.querySelector('img').setAttribute('src', imageFallback);
