@@ -10,7 +10,7 @@ class ImgBanner extends HTMLElement {
             max-width: 23.125rem;
           }
           img {
-            width: initial;
+            width: 100%;
           }
         </style>
         
