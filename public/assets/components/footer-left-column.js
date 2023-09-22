@@ -42,6 +42,7 @@ footerLeftColumn.innerHTML = `
     <div class="content-container">
         <p>Renovate. Create. Elevate.</p>
         <h5>1085 Thousand Oaks Blvd<br>Greenville, SC 29607</h5>
+        <h5>(864) 775-6855</h5>
     </div>
     
         
