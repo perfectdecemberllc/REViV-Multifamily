@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>REViV | Services</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="styles.css">
+        <script src="assets/components/hero.js"></script>
+        <script src="assets/components/btn.js"></script>
+        <script src="assets/components/page-intro.js"></script>
+        <script src="assets/components/cw-100.js"></script>
+        <script src="assets/components/cw-200.js"></script>
+        <script src="assets/components/cw-300.js"></script>
+        <script src="assets/components/cw-400.js"></script>
+        <script src="assets/components/cw-600.js"></script>
+        <script src="assets/components/cw-900.js"></script>
+        <script src="assets/components/card-md.js"></script>
+        <script src="assets/components/footer-left-column.js"></script>
+        <script src="assets/components/footer-divider.js"></script>
+        <script src="assets/components/footer-copyright.js"></script>
+    </head>
+    <body>
+        <!--HERO SECTION-->
+        <hero-section data-variation="height-70">
+            <!--HERO CONTENT-->
+            <nav-menu slot="nav"></nav-menu>
+            <cw-900 slot="content">
+                <label slot="label-text" for="hero">ReViv Your Approach</label>
+                <h1 slot="heading-text">Redefine Your Value Add</h1>
+                <btn-component slot="button" href="#" data-variation="filled">Discover More</btn-component>
+            </cw-900>
+            <!--HERO IMAGE-->
+            <picture slot="hero-image">
+                <source media="(min-width: 300px)" srcset="
+                    assets/images/hero/hero_services_1x.webp 1x,
+                    assets/images/hero/hero_services_2x.webp 2x,
+                    assets/images/hero/hero_services_3x.webp 3x">
+
+                <img src="assets/images/hero/hero_about_1x.jpg" alt="">
+            </picture>
+        </hero-section>
+        <!--INTRO AND CORE VALUES-->
+        <main>
+            <!--INTRO-->
+            <section class="section">
+                <div class="container flex flex-gap-12 align-center">
+                    <!--INTRO CONTENT-->
+                    <page-intro data-variation="left-aligned">
+                        <h2 slot="heading">Welcome to the REViV Family</h2>
+                        <p slot="description">We founded our company on the belief that, despite an outward appearance, there is an intrinsic value in everything. We coalesced behind the concept “to revive” because it means “to give life to” or “restore to its former glory.” In other words, REViV is a company that gives second chances, both to broken people and structures because of the intrinsic value within. For that reason, the “I” in REViV is lower case. It’s not a typo! We insist that everyone be constantly reminded that it’s not about us — the work we do is so much bigger than any individual member of the team.</p>
+                    </page-intro>
+                    <!--STAT 1-->
+                    <cw-100 data-variation="dark">
+                        <h3 slot="heading">70+</h3>
+                        <p slot="description">Years of Combined Experience</p>
+                    </cw-100>
+                </div>
+            </section>
+            <!--SERVICES-->
+            <section class="section">
+                <div class="container grid-autofill-col gap-sm">
+                    <!--COMMUNICATION-->
+                    <cw-600>
+                        <svg slot="icon" width="75" height="75" viewBox="0 0 75 75" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M17.8125 33.5625V9.9375C17.8125 7.035 20.16 4.6875 23.0625 4.6875H49.3125C52.215 4.6875 54.5625 7.035 54.5625 9.9375V12.5625M54.5625 38.8125V65.0625C54.5625 67.965 52.215 70.3125 49.3125 70.3125H23.0625C20.16 70.3125 17.8125 67.965 17.8125 65.0625V59.8125M33.5625 62.4375H38.8125M67.6875 17.8125L62.4375 24.375V28.3125C62.4375 31.215 60.09 33.5625 57.1875 33.5625H36.1875C33.285 33.5625 30.9375 31.215 30.9375 28.3125V23.0625C30.9375 20.16 33.285 17.8125 36.1875 17.8125H67.6875ZM7.3125 38.8125L12.5625 45.375V49.3125C12.5625 52.215 14.91 54.5625 17.8125 54.5625H38.8125C41.715 54.5625 44.0625 52.215 44.0625 49.3125V44.0625C44.0625 41.16 41.715 38.8125 38.8125 38.8125H7.3125Z" stroke="#143B5C" stroke-width="2.625" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                        <h4 slot="heading">Communication</h4>
+                        <p slot="description">Communication with our crew is extremely important. Real time communication through our app makes this easy.</p>
+                    </cw-600>
+                    <!--TRACKING-->
+                    <cw-600>
+                        <svg slot="icon" width="75" height="75" viewBox="0 0 75 75" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M23.0625 44.0625V62.4375M15.1875 30.9375V62.4375M7.3125 25.6875V62.4375M30.9375 46.6875V62.4375M38.8125 44.0625V62.4375M62.4375 46.6875V62.4375M70.3125 51.9375V62.4375M70.3125 67.6875H7.3125M54.5625 40.965V55.875C54.5625 58.05 52.8 59.8125 50.625 59.8125C48.45 59.8125 46.6875 58.05 46.6875 55.875V40.965M50.7825 21.9075L63.5925 34.7175M26.8425 34.7175L11.4075 19.2825M57.5325 39.9675C55.4175 40.905 53.085 41.4375 50.625 41.4375C41.205 41.4375 33.5625 33.795 33.5625 24.375C33.5625 14.955 41.205 7.3125 50.625 7.3125C60.045 7.3125 67.6875 14.955 67.6875 24.375C67.6875 25.7475 67.5075 27.075 67.2 28.3575M39.3225 27.8025L45.2175 21.9075M70.3125 37.5C70.3125 39.6746 68.5496 41.4375 66.375 41.4375C64.2004 41.4375 62.4375 39.6746 62.4375 37.5C62.4375 35.3254 64.2004 33.5625 66.375 33.5625C68.5496 33.5625 70.3125 35.3254 70.3125 37.5ZM51.9375 19.125C51.9375 21.2996 50.1746 23.0625 48 23.0625C45.8254 23.0625 44.0625 21.2996 44.0625 19.125C44.0625 16.9504 45.8254 15.1875 48 15.1875C50.1746 15.1875 51.9375 16.9504 51.9375 19.125ZM33.5625 37.5C33.5625 39.6746 31.7996 41.4375 29.625 41.4375C27.4504 41.4375 25.6875 39.6746 25.6875 37.5C25.6875 35.3254 27.4504 33.5625 29.625 33.5625C31.7996 33.5625 33.5625 35.3254 33.5625 37.5ZM12.5625 16.5C12.5625 18.6746 10.7996 20.4375 8.625 20.4375C6.45038 20.4375 4.6875 18.6746 4.6875 16.5C4.6875 14.3254 6.45038 12.5625 8.625 12.5625C10.7996 12.5625 12.5625 14.3254 12.5625 16.5Z" stroke="#002E5A" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                        <h4 slot="heading">Tracking</h4>
+                        <p slot="description">Each of our staff are equipped to be able to track your projects progress at a moments notice.</p>
+                    </cw-600>
+                    <!--EFFICIENCY-->
+                    <cw-600>
+                        <svg slot="icon" width="75" height="75" viewBox="0 0 75 75" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M60.5324 30.5025C59.849 29.8191 58.741 29.8191 58.0576 30.5025C57.3741 31.186 57.3741 32.294 58.0576 32.9774L60.5324 30.5025ZM58.0651 32.9849C58.7485 33.6683 59.8565 33.6683 60.5399 32.9849C61.2234 32.3015 61.2234 31.1935 60.5399 30.51L58.0651 32.9849ZM61.0495 32.4679C61.7332 31.7847 61.7336 30.6767 61.0504 29.993C60.3672 29.3093 59.2592 29.3089 58.5755 29.9921L61.0495 32.4679ZM48.233 40.3271C47.5493 41.0103 47.5489 42.1183 48.2321 42.802C48.9153 43.4856 50.0233 43.486 50.707 42.8029L48.233 40.3271ZM7.3125 24.23C6.346 24.23 5.5625 25.0135 5.5625 25.98C5.5625 26.9465 6.346 27.73 7.3125 27.73V24.23ZM28.3125 27.73C29.279 27.73 30.0625 26.9465 30.0625 25.98C30.0625 25.0135 29.279 24.23 28.3125 24.23V27.73ZM12.5625 32.105C11.596 32.105 10.8125 32.8885 10.8125 33.855C10.8125 34.8215 11.596 35.605 12.5625 35.605V32.105ZM23.0625 35.605C24.029 35.605 24.8125 34.8215 24.8125 33.855C24.8125 32.8885 24.029 32.105 23.0625 32.105V35.605ZM22.3145 41.8966C22.4066 40.9345 21.7012 40.08 20.7391 39.9879C19.777 39.8959 18.9225 40.6012 18.8305 41.5633L22.3145 41.8966ZM2.0625 16.355C1.096 16.355 0.3125 17.1385 0.3125 18.105C0.3125 19.0715 1.096 19.855 2.0625 19.855V16.355ZM66.1651 27.0375C65.4816 27.721 65.4816 28.829 66.1651 29.5124C66.8485 30.1958 67.9565 30.1958 68.6399 29.5124L66.1651 27.0375ZM70.8525 24.825L69.6151 23.5875L69.6151 23.5875L70.8525 24.825ZM70.8525 21.1125L69.6151 22.3499L69.6151 22.3499L70.8525 21.1125ZM69.9225 20.1825L71.1599 18.945L71.1599 18.945L69.9225 20.1825ZM66.21 20.1825L64.9726 18.945L64.9726 18.945L66.21 20.1825ZM61.5226 22.395C60.8391 23.0785 60.8391 24.1865 61.5226 24.8699C62.206 25.5533 63.314 25.5533 63.9974 24.8699L61.5226 22.395ZM46.6875 60.98C45.721 60.98 44.9375 61.7635 44.9375 62.73C44.9375 63.6965 45.721 64.48 46.6875 64.48V60.98ZM65.6376 37.6002C65.3119 36.6902 64.3101 36.2166 63.4002 36.5424C62.4902 36.8681 62.0166 37.8698 62.3424 38.7798L65.6376 37.6002ZM48.875 44.355C48.875 45.5631 47.8956 46.5425 46.6875 46.5425V50.0425C49.8286 50.0425 52.375 47.4961 52.375 44.355H48.875ZM46.6875 46.5425C45.4794 46.5425 44.5 45.5631 44.5 44.355H41C41 47.4961 43.5464 50.0425 46.6875 50.0425V46.5425ZM44.5 44.355C44.5 43.1469 45.4794 42.1675 46.6875 42.1675V38.6675C43.5464 38.6675 41 41.2139 41 44.355H44.5ZM46.6875 42.1675C47.8956 42.1675 48.875 43.1469 48.875 44.355H52.375C52.375 41.2139 49.8286 38.6675 46.6875 38.6675V42.1675ZM58.0576 32.9774L58.0651 32.9849L60.5399 30.51L60.5324 30.5025L58.0576 32.9774ZM58.5755 29.9921L48.233 40.3271L50.707 42.8029L61.0495 32.4679L58.5755 29.9921ZM7.3125 27.73H28.3125V24.23H7.3125V27.73ZM12.5625 35.605H23.0625V32.105H12.5625V35.605ZM18.8305 41.5633C18.744 42.4669 18.6875 43.4016 18.6875 44.355H22.1875C22.1875 43.5383 22.236 42.718 22.3145 41.8966L18.8305 41.5633ZM18.6875 44.355C18.6875 59.819 31.2235 72.355 46.6875 72.355V68.855C33.1565 68.855 22.1875 57.886 22.1875 44.355H18.6875ZM46.6875 72.355C62.1515 72.355 74.6875 59.819 74.6875 44.355H71.1875C71.1875 57.886 60.2185 68.855 46.6875 68.855V72.355ZM74.6875 44.355C74.6875 28.891 62.1515 16.355 46.6875 16.355V19.855C60.2185 19.855 71.1875 30.824 71.1875 44.355H74.6875ZM46.6875 16.355H2.0625V19.855H46.6875V16.355ZM50.625 11.105H42.75V14.605H50.625V11.105ZM42.75 11.105C41.5415 11.105 40.5625 10.126 40.5625 8.91748H37.0625C37.0625 12.059 39.6085 14.605 42.75 14.605V11.105ZM40.5625 8.91748C40.5625 7.70898 41.5415 6.72998 42.75 6.72998V3.22998C39.6085 3.22998 37.0625 5.77598 37.0625 8.91748H40.5625ZM42.75 6.72998H50.625V3.22998H42.75V6.72998ZM50.625 6.72998C51.8335 6.72998 52.8125 7.70898 52.8125 8.91748H56.3125C56.3125 5.77598 53.7665 3.22998 50.625 3.22998V6.72998ZM52.8125 8.91748C52.8125 10.126 51.8335 11.105 50.625 11.105V14.605C53.7665 14.605 56.3125 12.059 56.3125 8.91748H52.8125ZM48.4375 18.105V12.855H44.9375V18.105H48.4375ZM68.6399 29.5124L72.0899 26.0624L69.6151 23.5875L66.1651 27.0375L68.6399 29.5124ZM72.0899 26.0624C73.8009 24.3515 73.8009 21.586 72.0899 19.875L69.6151 22.3499C69.9591 22.694 69.9591 23.2435 69.6151 23.5875L72.0899 26.0624ZM72.0899 19.875L71.1599 18.945L68.6851 21.4199L69.6151 22.3499L72.0899 19.875ZM71.1599 18.945C69.449 17.2341 66.6835 17.2341 64.9726 18.945L67.4474 21.4199C67.7915 21.0758 68.341 21.0758 68.6851 21.4199L71.1599 18.945ZM64.9726 18.945L61.5226 22.395L63.9974 24.8699L67.4474 21.4199L64.9726 18.945ZM46.6875 64.48C57.8015 64.48 66.8125 55.469 66.8125 44.355H63.3125C63.3125 53.536 55.8685 60.98 46.6875 60.98V64.48ZM66.8125 44.355C66.8125 41.9794 66.393 39.7102 65.6376 37.6002L62.3424 38.7798C62.967 40.5248 63.3125 42.3955 63.3125 44.355H66.8125Z" fill="#002E5A"/>
+                        </svg>  
+                        <h4 slot="heading">Efficiency</h4>
+                        <p slot="description">Working smarter not harder means that we can get your project done in a timely manner but also be accurate.</p>
+                    </cw-600>
+                    <!--PROGRESS REPORTS-->
+                    <cw-600>
+                        <svg slot="icon" width="75" height="75" viewBox="0 0 75 75" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M18.4199 11.2051H15.7949C11.4449 11.2051 7.91992 14.7301 7.91992 19.0801V61.0801C7.91992 65.4301 11.4449 68.9551 15.7949 68.9551H49.9199C54.2699 68.9551 57.7949 65.4301 57.7949 61.0801V58.4551M18.4199 11.2051C18.4199 9.75758 19.5974 8.58008 21.0449 8.58008H22.5974C24.1874 8.58008 25.6124 7.74758 26.5724 6.47258C28.0049 4.56008 30.2849 3.33008 32.8574 3.33008C35.4299 3.33008 37.7099 4.56758 39.1424 6.47258C40.1024 7.74008 41.5274 8.58008 43.1174 8.58008H44.6699C46.1174 8.58008 47.2949 9.75758 47.2949 11.2051M18.4199 11.2051V16.4551C18.4199 17.9026 19.5974 19.0801 21.0449 19.0801H44.6699C46.1174 19.0801 47.2949 17.9026 47.2949 16.4551V11.2051M47.2949 11.2051H49.9199M28.9199 36.1426V38.7676C28.9199 39.4951 28.3349 40.0801 27.6074 40.0801H17.1074C16.3799 40.0801 15.7949 39.4951 15.7949 38.7676V28.2676C15.7949 27.5401 16.3799 26.9551 17.1074 26.9551H24.9824M31.5449 26.9551L23.6699 34.8301L21.0449 32.2051M28.9199 57.1426V59.7676C28.9199 60.4951 28.3349 61.0801 27.6074 61.0801H17.1074C16.3799 61.0801 15.7949 60.4951 15.7949 59.7676V49.2676C15.7949 48.5401 16.3799 47.9551 17.1074 47.9551H24.9824M31.5449 47.9551L23.6699 55.8301L21.0449 53.2051M36.7949 29.5801H47.2949M44.6699 34.8301H36.7949M36.7949 50.5801H47.2949M44.6699 55.8301H36.7949M68.2949 29.5801V19.0801C68.2949 17.6326 67.1174 16.4551 65.6699 16.4551H55.1699M59.1074 50.5801L56.7449 47.4301C55.7249 46.0651 55.1699 44.4076 55.1699 42.7051V12.5176C55.1699 10.3426 56.9324 8.58008 59.1074 8.58008C61.2824 8.58008 63.0449 10.3426 63.0449 12.5176V42.7051C63.0449 44.4076 62.4899 46.0651 61.4699 47.4301L59.1074 50.5801ZM59.1074 50.5801V53.2051M34.1699 9.89258C34.1699 10.6175 33.5823 11.2051 32.8574 11.2051C32.1325 11.2051 31.5449 10.6175 31.5449 9.89258C31.5449 9.1677 32.1325 8.58008 32.8574 8.58008C33.5823 8.58008 34.1699 9.1677 34.1699 9.89258Z" stroke="#002E5A" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg> 
+                        <h4 slot="heading">Progress Reports</h4>
+                        <p slot="description">Daily check ins with our team through our app allow project leads to communicate progress with you quicker.</p>
+                    </cw-600>
+                    <!--QUALITY CONTROL-->
+                    <cw-600>
+                        <svg slot="icon" width="75" height="75" viewBox="0 0 75 75" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M19.395 64.2373C24.45 64.2373 27.57 58.2298 28.695 54.0898C28.875 53.4148 29.2275 52.8073 29.7225 52.3123L35.43 46.6048C36.8025 45.2323 36.8025 43.0123 35.43 41.6398L35.4225 41.6323C34.05 40.2598 31.8225 40.2598 30.45 41.6323L24.6075 47.4823C24.5325 47.5573 24.4425 47.6323 24.36 47.6923C23.34 48.4273 21.8925 47.8273 21.495 46.6348L21.0675 45.3448M4.95752 55.0498L7.58252 52.4248L22.02 66.8623L19.395 69.4873M20.7075 35.3623H16.5825C14.73 35.3623 13.1175 36.6223 12.675 38.4148L8.97002 53.4298M32.52 58.9873H62.7075C64.155 58.9873 65.3325 57.8098 65.3325 56.3623V44.2498C65.3325 43.2073 64.1925 42.5998 63.315 43.1548C61.935 44.0323 60.3 44.5573 58.77 44.5573C55.1475 44.5573 52.2075 41.6173 52.2075 37.9948C52.2075 34.3723 55.1475 31.4323 58.77 31.4323C60.3 31.4323 61.935 31.9573 63.315 32.8348C64.1925 33.3898 65.3325 32.7748 65.3325 31.7398V19.6123C65.3325 18.1648 64.155 16.9873 62.7075 16.9873H49.2825C48.24 16.9873 47.6325 15.8473 48.1875 14.9698C49.065 13.5898 49.59 11.9548 49.59 10.4248C49.59 6.8023 46.65 3.8623 43.0275 3.8623C39.405 3.8623 36.465 6.8023 36.465 10.4248C36.465 11.9548 36.99 13.5898 37.8675 14.9773C38.4225 15.8548 37.815 16.9873 36.78 16.9873H23.325C21.8775 16.9873 20.7075 18.1648 20.7075 19.6123V40.6123" stroke="#002E5A" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                        <h4 slot="heading">Quality Control</h4>
+                        <p slot="description">Photos of progress make tracking your project easy. We want to approve of every stage before someone goes home
+                            for the day.</p>
+                    </cw-600>
+                    <!--SCHEDULING-->
+                    <cw-600>
+                        <svg slot="icon" width="75" height="75" viewBox="0 0 75 75" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M9.91504 38.0327H15.165M37.4775 65.5952V60.3452M59.79 38.0327H65.04M23.6925 14.1677L26.3175 18.7127M48.63 57.3602L51.255 61.9052M23.6925 61.9052L26.3175 57.3602M48.63 18.7127L51.255 14.1677M13.605 51.8177L18.15 49.1927M56.7975 26.8802L61.35 24.2552M13.605 24.2552L18.15 26.8802M56.7975 49.1927L61.35 51.8177M37.4775 40.6577V44.5952M37.4775 40.6577C38.9273 40.6577 40.1025 39.4825 40.1025 38.0327C40.1025 36.583 38.9273 35.4077 37.4775 35.4077M37.4775 40.6577C36.0278 40.6577 34.8525 39.4825 34.8525 38.0327C34.8525 36.583 36.0278 35.4077 37.4775 35.4077M37.4775 10.4702V35.4077M50.6025 45.6152L39.7425 39.3377M35.2125 36.7277L32.2275 35.0027M70.29 57.7202C70.29 64.9652 64.4175 70.8452 57.165 70.8452H17.79C10.5375 70.8452 4.66504 64.9652 4.66504 57.7202V18.3452C4.66504 11.1002 10.5375 5.22021 17.79 5.22021H57.165C64.4175 5.22021 70.29 11.1002 70.29 18.3452V57.7202Z" stroke="#002E5A" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                        <h4 slot="heading">Scheduling</h4>
+                        <p slot="description">Knowing when a trade is going to be on site makes the delicate balance of timing work iim harmony.</p>
+                    </cw-600>
+                    <!--SCALE-->
+                    <cw-600>
+                        <svg slot="icon" width="75" height="75" viewBox="0 0 75 75" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M13.4775 62.7676C17.8275 57.5176 24.8775 57.5176 29.2275 62.7676M52.8525 45.7051C56.475 42.2026 62.355 42.2026 65.9775 45.7051M20.04 22.0801C23.6625 18.5776 29.5425 18.5776 33.165 22.0801M36.0675 49.3126L48.3825 44.6401M24.99 28.5226L23.505 39.3076M49.8375 33.5626L36.18 23.7226M26.6025 52.2676C26.6025 55.1671 24.252 57.5176 21.3525 57.5176C18.453 57.5176 16.1025 55.1671 16.1025 52.2676C16.1025 49.3681 18.453 47.0176 21.3525 47.0176C24.252 47.0176 26.6025 49.3681 26.6025 52.2676ZM63.3525 37.8301C63.3525 40.0047 61.5897 41.7676 59.415 41.7676C57.2404 41.7676 55.4775 40.0047 55.4775 37.8301C55.4775 35.6555 57.2404 33.8926 59.415 33.8926C61.5897 33.8926 63.3525 35.6555 63.3525 37.8301ZM71.2275 40.4551C71.2275 46.9789 65.9389 52.2676 59.415 52.2676C52.8912 52.2676 47.6025 46.9789 47.6025 40.4551C47.6025 33.9312 52.8912 28.6426 59.415 28.6426C65.9389 28.6426 71.2275 33.9312 71.2275 40.4551ZM30.54 14.2051C30.54 16.3797 28.7772 18.1426 26.6025 18.1426C24.4279 18.1426 22.665 16.3797 22.665 14.2051C22.665 12.0305 24.4279 10.2676 26.6025 10.2676C28.7772 10.2676 30.54 12.0305 30.54 14.2051ZM37.1025 54.8926C37.1025 63.5911 30.051 70.6426 21.3525 70.6426C12.6541 70.6426 5.60254 63.5911 5.60254 54.8926C5.60254 46.1941 12.6541 39.1426 21.3525 39.1426C30.051 39.1426 37.1025 46.1941 37.1025 54.8926ZM38.415 16.8301C38.415 23.3539 33.1264 28.6426 26.6025 28.6426C20.0787 28.6426 14.79 23.3539 14.79 16.8301C14.79 10.3062 20.0787 5.01758 26.6025 5.01758C33.1264 5.01758 38.415 10.3062 38.415 16.8301Z" stroke="#002E5A" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg> 
+                        <h4 slot="heading">Scalability</h4>
+                        <p slot="description">Large projects and small projects get the same level of treatment. We deliver the same level of interaction no matter the size of a project.</p>
+                    </cw-600>
+                </div>
+            </section>
+            <!--VALUE ADD-->
+            <section class="section">
+                <div class="container grid" type="value-add">
+                    <!--HEADING CONTENT-->
+                    <cw-400>
+                        <h5 slot="label">Defining</h5>
+                        <h2 slot="heading">"Value Add"</h2>
+                        <p slot="description">For Multi-family owners seeking the best return on their investment, we deliver a higher ROI with faster, turnkey renovations, completed with unquestionable workmanship, insight, and integrity.</p>
+                    </cw-400>
+                    <!--VALUE ADD LIST-->
+                    <ul type="value-add">
+                        <!--CONCEPT 1-->
+                        <cw-200>
+                            <picture slot="image">
+                                <source media="(min-width: 300px)" srcset="
+                                assets/images/define-value/concept-1_1x.webp 1x,
+                                assets/images/define-value/concept-1_2x.webp 2x,
+                                assets/images/define-value/concept-1_3x.webp 3x">
+                                <img class="w-full" src="assets/images/define-value/concept-1_1x.jpg" alt="">
+                            </picture>
+                            <h2 slot="heading">ROI-Focused Insights & Market Knowledge</h2>
+                            <p slot="description">Our unique backgrounds in construction and property valuation offer your team value-add expertise that will impact your ROI.</p>
+                        </cw-200>
+                        <!--CONCEPT 2-->
+                        <cw-200>
+                            <picture slot="image">
+                                <source media="(min-width: 300px)" srcset="
+                                assets/images/define-value/concept-2_1x.webp 1x,
+                                assets/images/define-value/concept-2_2x.webp 2x,
+                                assets/images/define-value/concept-2_3x.webp 3x">
+    
+                                <img class="w-full" src="assets/images/define-value/concept-2_1x.jpg" alt="">
+                            </picture>
+                            <h2 slot="heading">Turn-key Services</h2>
+                            <p slot="description">Inside and Out - We manage the complete process from concept to completion, including every amenity or detail, for a turn-key result you can trust.</p>
+                        </cw-200>
+                        <!--CONCEPT 3-->
+                        <cw-200>
+                            <picture slot="image">
+                                <source media="(min-width: 300px)" srcset="
+                                assets/images/define-value/concept-3_1x.webp 1x,
+                                assets/images/define-value/concept-3_2x.webp 2x,
+                                assets/images/define-value/concept-3_3x.webp 3x">
+    
+                                <img class="w-full" src="assets/images/define-value/concept-3_1x.jpg" alt="">
+                            </picture>
+                            <h2 slot="heading">Timely Unit Turns</h2>
+                            <p slot="description">We have an experienced staff that is able to renovate your units with swift skill, avoiding subcontractor delays. </p>
+                        </cw-200>
+                    </ul>
+                </div>
+            </section>
+            <!--CAROUSEL-->
+            <card-carousel class="section gap-sm bg-neutral-100">
+                <card-md 
+                    slot="one" 
+                    address="11010 Eastlake Club Dr, Raleigh, NC" 
+                    title="Braxton At Brier Creek"" 
+                    link="portfolio-braxton.html" 
+                    image-3x="assets/images/braxton/braxton_card-md_3x.webp" 
+                    image-2x="assets/images/braxton/braxton_card-md_2x.webp" 
+                    image-fallback="assets/images/braxton/braxton_card-md_1x.webp">
+                </card-md>
+                <card-md 
+                    slot="two" 
+                    address="300 N Hwy 25 Bypass, Greenville, SC" 
+                    title="Park At Uptown" 
+                    link="portfolio-park-uptown.html" 
+                    image-3x="assets/images/colony-north/colony-north_card-md_3x.webp" 
+                    image-2x="assets/images/colony-north/colony-north_card-md_2x.webp" 
+                    image-fallback="assets/images/colony-north/colony-north_card-md_1x.webp">
+                </card-md>
+                <card-md 
+                    slot="three" 
+                    address="1449 S Church St, Charlotte, NC" 
+                    title="District Flats" 
+                    link="portfolio-district-flats.html" 
+                    image-3x="assets/images/district-flats/district-flats_card-md_3x.webp" 
+                    image-2x="assets/images/district-flats/district-flats_card-md_2x.webp" 
+                    image-fallback="assets/images/district-flats/district-flats_card-md_1x.webp">
+                </card-md>
+                <card-md 
+                    slot="four" 
+                    address="1680 Bluewater way, Charleston, SC" 
+                    title="Bluewater At Bolton's Landing" 
+                    link="portfolio-bluewater.html" 
+                    image-3x="assets/images/bluewater/bluewater_card-md_3x.webp" 
+                    image-2x="assets/images/bluewater/bluewater_card-md_2x.webp" 
+                    image-fallback="assets/images/bluewater/bluewater_card-md_1x.webp">
+                </card-md>
+                <card-md 
+                    slot="five" 
+                    address="771 E Butler Rd, Mauldin, SC" 
+                    title="Terrace At Butler" 
+                    link="portfolio-terrace-butler.html" 
+                    image-3x="assets/images/terrace-butler/terrace-butler_card-md_3x.webp" 
+                    image-2x="assets/images/terrace-butler/terrace-butler_card-md_2x.webp" 
+                    image-fallback="assets/images/terrace-butler/terrace-butler_card-md_1x.webp">
+                </card-md>
+                <!-- <card-md 
+                    slot="six" 
+                    address="
+                    555 Wild Wing Blvd, Conway, SC" 
+                    title="Aviary Village" 
+                    link="portfolio-aviary-village.html" 
+                    image-3x="assets/images/bluewater/bluewater_card-md_3x.webp" 
+                    image-2x="assets/images/bluewater/bluewater_card-md_2x.webp" 
+                    image-fallback="assets/images/bluewater/bluewater_card-md_1x.webp">
+                </card-md> -->
+            </card-carousel>
+            <!--FOOTER-->
+            <footer class="section bg-accent-500 transparent-img" data-variation="footer">
+                <div class="container">
+                    <!--CONTENT COLUMNS-->
+                    <div class="mb-5">
+                        <!--LEFT COLUMN-->
+                        <footer-left-column></footer-left-column>
+                        <!--RIGHT COLUMN-->
+                        <div>
+
+                        </div>
+                    </div>
+                    <!--FOOTER DIVIDER-->
+                    <footer-divider></footer-divider>
+                    <!--COPYRIGHT-->
+                    <footer-copyright></footer-copyright>
+                </div>
+
+            </footer>
+        </main>
+    </body>
+    <script src="assets/components/nav-menu.js"></script>
+    <script src="assets/components/card-carousel.js"></script>
+</html>
