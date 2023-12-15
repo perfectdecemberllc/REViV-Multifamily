@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>REViV | Terrace At Butler</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="styles.css">
+        <script src="assets/components/hero.js"></script>
+        <script src="assets/components/btn.js"></script>
+        <script src="assets/components/page-intro.js"></script>
+        <script src="assets/components/cw-900.js"></script>
+        <script src="assets/components/cw400.js"></script>
+        <script src="assets/components/checklist-item.js"></script>
+        <script src="assets/components/cw-description.js"></script>
+        <script src="assets/components/highlights-list.js"></script>
+        <script src="assets/components/img-banner.js"></script>
+        <script src="assets/components/cw-100-list.js"></script>
+        <script src="assets/components/cw-100.js"></script>
+        <script src="assets/components/img-cs.js"></script>
+        <script src="assets/components/img-cs-lg.js"></script>
+        <script src="assets/components/footer-left-column.js"></script>
+        <script src="assets/components/footer-divider.js"></script>
+        <script src="assets/components/footer-copyright.js"></script>
+    </head>
+    <body>
+        <!--HERO SECTION-->
+        <hero-section data-variation="height-70">
+            <!--HERO CONTENT-->
+            <nav-menu slot="nav"></nav-menu>
+            <cw-900 slot="content">
+                <label slot="label-text" for="hero">Greenville, South Carolina</label>
+                <h1 slot="heading-text">Terrace at Butler</h1>
+            </cw-900>
+            <!--HERO IMAGE-->
+            <picture slot="hero-image">
+                <source media="(min-width: 300px)" srcset="
+                    assets/images/hero/hero_about_1x.webp 1x,
+                    assets/images/hero/hero_about_2x.webp 2x,
+                    assets/images/hero/hero_about_3x.webp 3x">
+
+                <img src="assets/images/hero/hero_about_1x.jpg" alt="">
+            </picture>
+        </hero-section>
+        <main>
+            <!--INTRO-->
+            <section class="section">
+                <div class="container">
+                    <!--INTRO CONTENT-->
+                    <div class="grid-2-1-cols gap-8-md">
+                        <!--LEFT COLUMN-->
+                        <div class="gap-8 grid-area-2-1">
+                            <!--HEADING AND CHECKLIST-->
+                            <div>
+                                <!--HEADING-->
+                                <content-wrapper-400
+                                label="We Are Ready"
+                                heading="Relax, you're home now!">
+                                </content-wrapper-400>
+                                <!--CHECKLIST-->
+                                <ul type="checklist">
+                                    <checklist-item
+                                    text="Upgraded unit with fresh paint, replaced bathroom and kitchen countertops with white quartz and updated all appliances to stainless steel.">
+                                    </checklist-item>
+                                    <checklist-item
+                                    text="Replaced all plumbing fixtures to modern black low flow faucets and shower heads.">
+                                    </checklist-item>
+                                    <checklist-item
+                                    text="Upgraded all the lights to modern, energy efficent LED lights.">
+                                    </checklist-item>
+                                </ul>
+                            </div>
+                            <!--DESCRIPTION-->
+                            <cw-description
+                            text="When we were given the opportunity at Terrace at Butler, the management team relayed frustration with time delays and material delays they were experiencing in their current renovation. We offered to take the stress away from them and brought the unit turn lead time down from 60+ days to 15 days. Meeting all of the management teams needs without major changes to material or scope of work.">
+                            </cw-description>
+                            <!--STATS-->
+                            <cw-100-list data-variation="case-study">
+                                <!--STAT 1-->
+                                <cw-100 slot="cw-1" data-variation="dark">
+                                    <h3 slot="heading">100%</h3>
+                                    <p slot="description">On-time delivery or earlier</p>
+                                </cw-100>
+                            </cw-100-list>
+                        </div>
+                        <!--RIGHT COLUMN-->
+                        <div class="grid-row-max justify-self-center justify-items-center gap-8">
+                            <highlights-list class="grid-area-2-1"
+                            status="In Progress"
+                            area="Terrace at Butler"
+                            location="7 Buildings + Clubhouse"
+                            type="132 Units"
+                            price="6 Unique Floorplans"
+                            parking="36%">
+                            </highlights-list>
+                            <img-banner
+                            image-2x="assets/images/terrace-butler/terrace-butler_logo.png" image-3x="assets/images/terrace-butler/terrace-butler_logo.png"
+                            image-fallback="assets/images/terrace-butler/terrace-butler_logo.png">
+                            </img-banner>
+                        </div>
+                    </div>
+                    <!--IMAGE LIST-->
+                    <ul class="flex wrap justify-between flex-gap-4 pt-12">
+                        <!--IMAGE 1-->
+                        <img-cs 
+                        image-2x="assets/images/terrace-butler/terrace-butler_bathroom_2x.webp" 
+                        image-3x="assets/images/terrace-butler/terrace-butler_bathroom_3x.webp" 
+                        image-fallback="assets/images/terrace-butler/terrace-butler_bathroom_1x.webp">
+                        </img-cs>
+                        <!--IMAGE 2-->
+                        <img-cs 
+                        image-2x="assets/images/terrace-butler/terrace-butler_living-2_2x.webp" 
+                        image-3x="assets/images/terrace-butler/terrace-butler_living-2_3x.webp" 
+                        image-fallback="assets/images/terrace-butler/terrace-butler_living-2_1x.webp">
+                        </img-cs>
+                        <!--IMAGE 3-->
+                        <img-cs 
+                        image-2x="assets/images/terrace-butler/terrace-butler_kitchen-2_2x.webp" 
+                        image-3x="assets/images/terrace-butler/terrace-butler_kitchen-2_3x.webp" 
+                        image-fallback="assets/images/terrace-butler/terrace-butler_kitchen-2_1x.webp">
+                        </img-cs>
+                        <!--IMAGE 4-->
+                        <img-cs 
+                        image-2x="assets/images/terrace-butler/terrace-butler_pantry_2x.webp" 
+                        image-3x="assets/images/terrace-butler/terrace-butler_pantry_3x.webp" 
+                        image-fallback="assets/images/terrace-butler/terrace-butler_pantry_1x.webp">
+                        </img-cs>
+                    </ul>
+                    <!--LARGE IMAGES-->
+                    <div class="pt-8 gap-5">
+                        <!--IMAGE 1-->
+                        <img-cs-lg
+                        image-2x="assets/images/terrace-butler/terrace-butler_kitchen-1_2x.webp" 
+                        image-3x="assets/images/terrace-butler/terrace-butler_kitchen-1_3x.webp" 
+                        image-fallback="assets/images/terrace-butler/terrace-butler_kitchen-1_1x.webp">
+                        </img-cs-lg>
+                        <!--IMAGE 2-->
+                        <img-cs-lg
+                        image-2x="assets/images/terrace-butler/terrace-butler_living-1_2x.webp" 
+                        image-3x="assets/images/terrace-butler/terrace-butler_living-1_3x.webp" 
+                        image-fallback="assets/images/terrace-butler/terrace-butler_living-1_1x.webp">
+                        </img-cs-lg>
+                    </div>
+                </div>
+            </section>
+            <!--FOOTER-->
+            <footer class="section bg-accent-500 transparent-img" data-variation="footer">
+                <div class="container">
+                    <!--CONTENT COLUMNS-->
+                    <div class="mb-5">
+                        <!--LEFT COLUMN-->
+                        <footer-left-column></footer-left-column>
+                        <!--RIGHT COLUMN-->
+                        <div>
+
+                        </div>
+                    </div>
+                    <!--FOOTER DIVIDER-->
+                    <footer-divider></footer-divider>
+                    <!--COPYRIGHT-->
+                    <footer-copyright></footer-copyright>
+                </div>
+
+            </footer>
+        </main>
+    </body>
+    <script src="assets/components/nav-menu.js"></script>
+</html>
