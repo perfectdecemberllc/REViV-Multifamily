@@ -111,4 +111,4 @@ class HighlightsList extends HTMLElement {
     }
 }
     
-    customElements.define('highlights-list', HighlightsList);
+    customElements.define('highlights-res-list', HighlightsList);
