@@ -1,4 +1,4 @@
-class HighlightsList extends HTMLElement {
+class HighlightsHosList extends HTMLElement {
     constructor() {
       super();
   
@@ -129,4 +129,4 @@ class HighlightsList extends HTMLElement {
     }
 }
     
-    customElements.define('highlights-list', HighlightsList);
+    customElements.define('highlights-hos-list', HighlightsHosList);
