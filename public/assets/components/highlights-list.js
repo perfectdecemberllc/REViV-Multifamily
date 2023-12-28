@@ -85,30 +85,13 @@ class HighlightsList extends HTMLElement {
             </svg>
             <p>Expected ROI: <span class="parking"></span></p>
           </li>
-          <li>
-            <svg xmlns="http://www.w3.org/2000/svg" width="5" height="10" fill="none" viewBox="0 0 5 10">
-              <path fill="#ffffff" d="m0 10 5-5-5-5v10Z"/>
-            </svg>
-            <p>Purchase Price: <span class="purchase"></span></p>
-          </li>
-          <li>
-            <svg xmlns="http://www.w3.org/2000/svg" width="5" height="10" fill="none" viewBox="0 0 5 10">
-              <path fill="#ffffff" d="m0 10 5-5-5-5v10Z"/>
-            </svg>
-            <p>Renovation Cost: <span class="renovation"></span></p>
-          </li>
-          <li>
-            <svg xmlns="http://www.w3.org/2000/svg" width="5" height="10" fill="none" viewBox="0 0 5 10">
-              <path fill="#ffffff" d="m0 10 5-5-5-5v10Z"/>
-            </svg>
-            <p>Listing Price: <span class="listing"></span></p>
-          </li>
+
         </ul>
       `;
     }
 
     connectedCallback() {
-        const attributes = ['status', 'area', 'location', 'type', 'price', 'parking', 'purchase', 'renovation', 'listing'];
+        const attributes = ['status', 'area', 'location', 'type', 'price', 'parking'];
     
         for (const attr of attributes) {
           const value = this.getAttribute(attr);
@@ -119,11 +102,11 @@ class HighlightsList extends HTMLElement {
       }
     
       static get observedAttributes() {
-        return ['status', 'area', 'location', 'type', 'price', 'parking', 'purchase', 'renovation', 'listing'];
+        return ['status', 'area', 'location', 'type', 'price', 'parking'];
       }
     
       attributeChangedCallback(name, oldValue, newValue) {
-        if (name === 'status' || name === 'area' || name === 'location' || name === 'type' || name === 'price' || name === 'parking' || name === 'purchase' || name === 'renovation' || name === 'listing') {
+        if (name === 'status' || name === 'area' || name === 'location' || name === 'type' || name === 'price' || name === 'parking') {
           this.shadowRoot.querySelector(`.${name}`).textContent = newValue;
         }
     }
